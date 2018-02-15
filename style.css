@@ -10,11 +10,11 @@ body {
 
 .backImg {
 
-position: relative;
-top:10em;
-left: 3em;
-height:100vh;
-width:100vw;
+    position: relative;
+    top: 10em;
+    left: 3em;
+    height: 100vh;
+    width: 100vw;
 
 }
 
@@ -28,8 +28,9 @@ header {
 .logo {
     position: absolute;
     top: 0;
-    left: 1em;
-    width: 15vw;
+    left: 0;
+    width: 140px;
+    display: block;
 
 }
 
@@ -59,8 +60,9 @@ main.noGrid {
 
 
 
-    /*navigation*/
-    .main-nav {
+/*navigation*/
+
+.main-nav {
     height: 100%;
     width: 0;
     position: fixed;
@@ -71,38 +73,39 @@ main.noGrid {
     padding-top: 60px;
 
 }
-    .main-nav a {
-        padding: 9px 32px 8px 8px;
-        text-decoration: none;
-        text-align: right;
-        font-size: 25px;
-        color: #818181;
-        display: block;
-    }
 
-    .main-nav a:hover {
-        color: #f1f1f1;
-        border-right: 3px solid #FFFFFF;
+.main-nav a {
+    padding: 9px 32px 8px 8px;
+    text-decoration: none;
+    text-align: right;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+}
 
-    }
+.main-nav a:hover {
+    color: #f1f1f1;
+    border-right: 3px solid #FFFFFF;
 
-    .main-nav a:first-child:hover {
-        border: none;
-    }
+}
 
-    .main-nav .closebtn {
-        position: absolute;
-        top: 0;
-        left: 10px;
-        font-size: 36px;
+.main-nav a:first-child:hover {
+    border: none;
+}
 
-    }
+.main-nav .closebtn {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    font-size: 36px;
+
+}
 
 
 
 .open {
-width: 100%;
-    }
+    width: 100%;
+}
 
 .close {
     width: 0;
@@ -111,17 +114,36 @@ width: 100%;
 .highlighted {
     color: #f1f1f1;
     border-right: 3px solid #FFFFFF;
-    }
-
-
 }
 
+
+
+
 @media only screen and (min-width: 40em) {
-     /*grid*/
+    /*grid*/
     main.grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(20em,1fr));
+        grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
         grid-gap: 1.5rem;
         grid-template-rows: 20em;
     }
+
+    .open {
+        width: 250px;
+    }
+
+    .open-mq {
+        width: 250px;
+    }
+
+    .logo {
+        top: 0;
+        left: 1em;
+        width: 200px;
+    }
+}
+
+@media only screen and (min-width: 60em) {
+
+
 }
