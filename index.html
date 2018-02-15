@@ -5,40 +5,74 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MMD Curriculum</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css"> </head>
 
-<body onscroll="closeNav()">
-
-   <span onclick="openNav()" class="burger-menu">&#9776;</span>
-    <nav id="sidenav" class="main-nav">
-
-       <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="index.html">HOME</a>
-        <a href="program.html">PROGRAM STRUCTURE</a>
-        <a href="admission.html">ADMISSION</a>
-        <a href="future.html">FUTURE</a>
-    </nav>
-
-    <!--- this div is gonna be the background img-->
-    <img class="logo" src="images/logo.png"/>
-    <div class="wfb backImg">
-       <img class="background" src="" alt="background picture"/>
+<body onscroll="closeNav()"> <span onclick="openNav()" class="burger-menu">&#9776;</span>
+    <nav id="sidenav" class="main-nav"> <a href="#" class="closebtn" onclick="closeNav()">&times;</a> <a href="index.html">HOME</a> <a href="program.html">PROGRAM STRUCTURE</a> <a href="admission.html">ADMISSION</a> <a href="future.html">FUTURE</a> </nav>
+    <!--- this div is gonna be the background img--><img class="logo" src="images/logo.png" />
+    <div class="wfb backImg"> <img class="background" src="" alt="background picture" />
         <header>
-            <h1>CURRICULUM <br> MULTIMEDIA DESIGN</h1>
-        </header>
+            <h1>CURRICULUM <br> MULTIMEDIA DESIGN</h1> </header>
+    </div>
+    <main class="grid">
+        <div class="wf contLeft">
+            <h1>WHAT IS MMD</h1>
+            <p class=""></p>
+        </div>
+        <div class="wf contRight">
+            <h1>OBJECTIVES</h1>
+            <p class=""></p>
+        </div>
+    </main>
+
+    <!---this is the Core Area section --->
+
+      <h1 class="CoreAreaTitle">Core Areas</h1>
+
+    <section class="coreAreas">
+
+
+        <article class="business">
+            <img class="businessimg" alt="business" src="images/business.png">
+         <h2>Business</h2>
+        </article>
+        <article class="communication">
+             <img class="communicationimg" alt="communication" src="images/communication.png">
+        <h2>Communication and Presentation</h2>
+        </article>
+        <article class="design">
+             <img class="designimg" alt="design" src="images/design.png">
+        <h2>Design and Visualization</h2>
+        </article>
+        <article class="development">
+             <img class="interactionimg" alt="development" src="images/development.png">
+        <h2>Interaction Development</h2>
+        </article>
+    </section>
+
+    <!---this is the div for the Core Areas MODAL --->
+
+    <div class="modal-coreArea hide">
+    <aside class="modal-content">
+    <h1 class="modal-coreArea-title">
+    BUSINESS
+    </h1>
+    <p class="modal-coreArea-text">The core area is intended to provide the students with the necessary qualifications to understand
+the commercial framework of the business and digital business models, apply digital user data and
+take an innovative approach to multimedia production. Students must understand the multimedia
+designer’s role in the value chain in a multimedia production and be able to plan, manage and carry
+out a multimedia production.
+    </p>
+    <h2 class="knowledge">KNOWLEDGE</h2>
+        <p class="KnowText">Description of the knowledge </p>
+    <h2 class="skills">SKILLS</h2>
+       <p class="skillsText">Description of the skills </p>
+    <h2 class="competencies">COMPETENCIES</h2>
+        <p class="compText"> Description of the competencies</p>
+    </aside>
+
     </div>
 
-
-
-
-
-    <main class="grid">
-        <div class="wf contLeft"><h1>WHAT IS MMD</h1>
-        <p class=""></p></div>
-        <div class="wf contRight"><h1>OBJECTIVES</h1>
-        <p class=""></p></div>
-    </main>
     <script src="script.js"></script>
 </body>
 
