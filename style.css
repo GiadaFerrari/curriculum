@@ -9,11 +9,13 @@ body {
 }
 
 .backImg {
-    position: relative;
-    top: 10em;
-    left: 3em;
-    height: 100vh;
-    width: 100vw;
+
+position: relative;
+top:10em;
+left: 3em;
+height:100vh;
+width:100vw;
+
 }
 
 
@@ -104,5 +106,16 @@ main.noGrid {
         grid-gap: 1.5rem;
         grid-template-rows: 20em;
     }
+
+
+.main-nav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    padding-top: 60px;
 
 }
