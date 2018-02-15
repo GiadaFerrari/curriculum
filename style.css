@@ -75,7 +75,6 @@ main.noGrid {
     top: 0;
     right: 0;
     background-color: #111;
-    padding-top: 60px;
 
 }
 
@@ -104,9 +103,6 @@ a.highlighted {
 }
 
 .main-nav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 10px;
     font-size: 36px;
 
 }
