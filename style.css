@@ -117,5 +117,26 @@ main.noGrid {
     right: 0;
     background-color: #111;
     padding-top: 60px;
+<<<<<<< HEAD
+=======
+}
+
+.main-nav a {
+    padding: 9px 32px 8px 8px;
+    text-decoration: none;
+    text-align: right;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+}
+    .highlighted {
+        color: #f1f1f1;
+        border-right: 3px solid #FFFFFF;
+    }
+
+.main-nav a:hover {
+    color: #f1f1f1;
+    border-right: 3px solid #FFFFFF;
+>>>>>>> navigation
 
 }
