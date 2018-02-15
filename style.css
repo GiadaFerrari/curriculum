@@ -79,6 +79,10 @@ main.noGrid {
     color: #818181;
     display: block;
 }
+    .highlighted {
+        color: #f1f1f1;
+        border-right: 3px solid #FFFFFF;
+    }
 
 .main-nav a:hover {
     color: #f1f1f1;
