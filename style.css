@@ -14,6 +14,7 @@ body {
     left: 3em;
     height: 100vh;
     width: 100vw;
+
 }
 
 
@@ -26,8 +27,8 @@ header {
 .logo {
     position: absolute;
     top: 0;
-    left: 1em;
-    width: 15vw;
+    left: 0;
+    width: 140px;
     cursor: pointer;
 
 }
@@ -65,48 +66,62 @@ main.noGrid {
     right: 30px;
 }
 
-@media only screen and (min-width: 40em) {
 
-    /*navigation*/
-    .main-nav {
-        height: 100%;
-        width: 0;
-        position: fixed;
-        z-index: 1;
-        top: 0;
-        right: 0;
-        background-color: #111;
-        transition: 0.5s;
-        padding-top: 60px;
-    }
+.main-nav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    padding-top: 60px;
 
-    .main-nav a {
-        padding: 9px 32px 8px 8px;
-        text-decoration: none;
-        text-align: right;
-        font-size: 25px;
-        color: #818181;
-        display: block;
-    }
+}
 
-    .main-nav a:hover {
+.main-nav a {
+    padding: 9px 32px 8px 8px;
+    text-decoration: none;
+    text-align: right;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+}
+
+a.highlighted {
         color: #f1f1f1;
         border-right: 3px solid #FFFFFF;
-
     }
 
-    .main-nav a:first-child {
-        border: none;
-    }
+.main-nav a:hover {
+    color: #f1f1f1;
+    border-right: 3px solid #FFFFFF;
 
-    .main-nav .closebtn {
-        position: absolute;
-        top: 0;
-        left: 10px;
-        font-size: 36px;
+}
 
-    }
+.main-nav a:first-child:hover {
+    border: none;
+}
 
+.main-nav .closebtn {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    font-size: 36px;
+
+}
+
+.open {
+    width: 100%;
+}
+
+.close {
+    width: 0;
+}
+
+
+
+@media only screen and (min-width: 40em) {
     /*grid*/
     main.grid {
         display: grid;
@@ -122,6 +137,25 @@ main.noGrid {
         grid-template-rows: 20em;
 
     }
+
+
+    .open {
+        width: 250px;
+    }
+
+    .open-mq {
+        width: 250px;
+    }
+
+    .logo {
+        top: 0;
+        left: 1em;
+        width: 200px;
+    }
+}
+
+@media only screen and (min-width: 60em) {
+
 
     .coreAreas {
     display: grid;
