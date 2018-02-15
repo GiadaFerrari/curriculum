@@ -8,7 +8,18 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body onscroll="closeNav()">
+   <!---- NAV --->
+   <span onclick="openNav()" class="burger-menu">&#9776;</span>
+    <nav id="sidenav" class="main-nav">
+
+       <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">HOME</a>
+        <a href="program.html">PROGRAM STRUCTURE</a>
+        <a href="admission.html">ADMISSION</a>
+        <a href="future.html">FUTURE</a>
+    </nav>
+
     <!--- this div is gonna be the background img-->
     <img class="images/logo" src="logo.png" alt="logo">
     <div class="wfb backImg">

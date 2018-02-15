@@ -1,14 +1,20 @@
 
-body {background-color: #777777;}
+body {
+background-color: #777777;
+font-family: "Lato", sans-serif;
+}
 
 .wf {background-color: white;
 min-height: 500px;
 min-width: 500px;}
 
 .backImg {
-    position:relative;
+position: relative;
+top:10em;
+left: 3em;
 height:100vh;
-width:100vw;}
+width:300vw;
+}
 
 
 header {position: absolute;
@@ -19,9 +25,7 @@ left: 2vw;}
     position:absolute;
     top:0;
     left:0;
-    border:1px solid black;
-    width:30px;
-    height:30px;
+    width: 15vw;
 
 }
 
@@ -42,4 +46,58 @@ main.noGrid {
     display: block;
 }
 
+/***** NAVIGATION *****/
+
+.burger-menu {
+    font-size: 30px;
+    cursor: pointer;
+    position: fixed;
+    z-index: 1;
+    top: 10px;
+    right: 30px;
+}
+
+@media only screen and (min-width: 40em){
+
+
+.main-nav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.main-nav a {
+    padding: 9px 32px 8px 8px;
+    text-decoration: none;
+    text-align: right;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+}
+
+.main-nav a:hover {
+    color: #f1f1f1;
+    border-right: 3px solid #FFFFFF;
+
+}
+
+.main-nav a:first-child {
+    border: none;
+}
+
+.main-nav .closebtn {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    font-size: 36px;
+
+}
+
+}
 
