@@ -21,7 +21,7 @@ function closeNav() {
     document.getElementById("sidenav").classList.remove('open');
     document.getElementById("sidenav").classList.remove('open-mq');
     document.getElementById("sidenav").classList.add('close');
-    document.getElementById("sidenav").classList.remove('closebtn');
+
 }
 
 
