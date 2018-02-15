@@ -8,3 +8,14 @@ function closeNav() {
 
 }
 
+
+
+const modalCoreArea = document.querySelector(".modal-coreArea");
+console.log(modalCoreArea);
+modalCoreArea.addEventListener("click", ()=>modalCoreArea.classList.add("hide"));
+
+
+const businessimg = document.querySelector(".businessimg");
+
+businessimg.addEventListener("click", ()=>modalCoreArea.classList.remove("hide"));
+
