@@ -9,9 +9,8 @@ function openNav() {
      document.getElementById("sidenav").classList.add('open');
     document.getElementById("sidenav").classList.remove('close');
      document.getElementById("sidenav").style.transition = "0.5s";
-
-
 }
+
 
 function closeNav() {
     document.getElementById("sidenav").style.transition = "0.5s";

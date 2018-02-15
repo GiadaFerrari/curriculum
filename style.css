@@ -9,7 +9,6 @@ body {
 }
 
 .backImg {
-
     position: relative;
     top: 10em;
     left: 3em;
@@ -59,9 +58,6 @@ main.noGrid {
 }
 
 
-
-/*navigation*/
-
 .main-nav {
     height: 100%;
     width: 0;
@@ -83,6 +79,11 @@ main.noGrid {
     display: block;
 }
 
+a.highlighted {
+        color: #f1f1f1;
+        border-right: 3px solid #FFFFFF;
+    }
+
 .main-nav a:hover {
     color: #f1f1f1;
     border-right: 3px solid #FFFFFF;
@@ -101,8 +102,6 @@ main.noGrid {
 
 }
 
-
-
 .open {
     width: 100%;
 }
@@ -110,12 +109,6 @@ main.noGrid {
 .close {
     width: 0;
 }
-
-.highlighted {
-    color: #f1f1f1;
-    border-right: 3px solid #FFFFFF;
-}
-
 
 
 
