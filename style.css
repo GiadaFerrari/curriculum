@@ -29,7 +29,7 @@ header {
     top: 0;
     left: 0;
     width: 140px;
-    display: block;
+    cursor: pointer;
 
 }
 
@@ -40,10 +40,19 @@ main {
 
 }
 
-
-
 main.noGrid {
     display: block;
+}
+
+/*program*/
+
+.circle div {
+    width: 20em;
+    background-color: white;
+    border-radius: 100%;
+    height: 20em;
+    margin: 1em;
+    display: inline;
 }
 
 /***** NAVIGATION *****/
@@ -121,6 +130,15 @@ a.highlighted {
         grid-template-rows: 20em;
     }
 
+    main.circle {
+        display:grid;
+        grid-template-columns: repeat(auto-fit, minmax(7em, 1fr));
+        grid-gap: 1.5rem;
+        grid-template-rows: 20em;
+
+    }
+
+
     .open {
         width: 250px;
     }
@@ -139,4 +157,62 @@ a.highlighted {
 @media only screen and (min-width: 60em) {
 
 
+    .coreAreas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 10px;
+    padding: 20px;
 }
+
+
+}
+
+
+/* core Areas section */
+
+
+.CoreAreaTitle{
+    padding-top: 10vh;
+    text-transform: uppercase;
+    padding-left: 10vw;
+}
+
+
+
+.coreAreas img{
+
+    width: 100%;
+
+}
+
+.coreAreas h2{
+    text-align: center;
+
+}
+
+
+/* Modal Core Areas styiling */
+
+
+.hide{
+    display: none;
+}
+
+
+.modal-coreArea{
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+}
+
+
+.modal-content{
+    background-color: #fefefe;
+    border: 1px solid red;
+    margin: 1em;
+}
+

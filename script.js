@@ -1,9 +1,13 @@
+let logo = document.querySelector(".logo");
 
+logo.addEventListener('click',()=>{
+    window.location.replace('index.html')
+})
 
 function load(){
-    document.getElementById("sidenav").classList.add('open-mq');
+    document.getElementById("sidenav").classList.add('open-mq');}
 
-}
+window.onload = load
 
 function openNav() {
      document.getElementById("sidenav").classList.add('open');
@@ -19,4 +23,17 @@ function closeNav() {
     document.getElementById("sidenav").classList.add('close');
 }
 
-window.onload = load
+
+
+
+
+const modalCoreArea = document.querySelector(".modal-coreArea");
+console.log(modalCoreArea);
+modalCoreArea.addEventListener("click", ()=>modalCoreArea.classList.add("hide"));
+
+
+const businessimg = document.querySelector(".businessimg");
+
+businessimg.addEventListener("click", ()=>modalCoreArea.classList.remove("hide"));
+
+
