@@ -42,4 +42,18 @@ main.noGrid {
     display: block;
 }
 
+footer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: auto;
+    margin: 50px;
+
+}
+footer div{
+    margin: auto;
+    background: white;
+     width: 100px;
+    height: 100px;
+    align-content: center;
+}
 
