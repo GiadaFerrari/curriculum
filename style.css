@@ -117,8 +117,7 @@ main.noGrid {
     right: 0;
     background-color: #111;
     padding-top: 60px;
-<<<<<<< HEAD
-=======
+
 }
 
 .main-nav a {
@@ -137,6 +136,6 @@ main.noGrid {
 .main-nav a:hover {
     color: #f1f1f1;
     border-right: 3px solid #FFFFFF;
->>>>>>> navigation
+
 
 }
