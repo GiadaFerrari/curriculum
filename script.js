@@ -1,40 +1,42 @@
 let logo = document.querySelector(".logo");
+let sidenav = document.getElementById("sidenav");
 
-logo.addEventListener('click',()=>{
+//nav
+
+logo.addEventListener('click', () => {
     window.location.replace('index.html')
 })
 
-function load(){
-    document.getElementById("sidenav").classList.add('open-mq');}
+//document.body.addEventListener('click', closeNav);
+
+
+function load() {
+    sidenav.classList.add('open-mq');
+}
 
 window.onload = load
 
 function openNav() {
-     document.getElementById("sidenav").classList.add('open');
-    document.getElementById("sidenav").classList.remove('close');
-     document.getElementById("sidenav").style.transition = "0.5s";
+    sidenav.classList.add('open');
+    sidenav.classList.remove('close');
+    sidenav.style.transition = "0.5s";
 }
 
 
 function closeNav() {
-    document.getElementById("sidenav").style.transition = "0.5s";
-    document.getElementById("sidenav").classList.remove('open');
-    document.getElementById("sidenav").classList.remove('open-mq');
-    document.getElementById("sidenav").classList.add('close');
+    sidenav.style.transition = "0.5s";
+    sidenav.classList.remove('open');
+    sidenav.classList.remove('open-mq');
+    sidenav.classList.add('close');
 
 }
-
-
-
-
+//core areas
 
 const modalCoreArea = document.querySelector(".modal-coreArea");
 console.log(modalCoreArea);
-modalCoreArea.addEventListener("click", ()=>modalCoreArea.classList.add("hide"));
+modalCoreArea.addEventListener("click", () => modalCoreArea.classList.add("hide"));
 
 
 const businessimg = document.querySelector(".businessimg");
 
-businessimg.addEventListener("click", ()=>modalCoreArea.classList.remove("hide"));
-
-
+businessimg.addEventListener("click", () => modalCoreArea.classList.remove("hide"));
