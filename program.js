@@ -42,6 +42,7 @@ function sliderMobile() {
         console.log ('hi papa');
         semesters.classList.add('moveMeUp', 'gridMe');
 
+
     } else { console.log ('hi mama');
             semesters.classList.remove('moveMeUp', 'gridMe')}/*else if (document.body.scrollTop < 100 || document.documentElement.scrollTop < 100){
          console.log ('hi mama');

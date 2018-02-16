@@ -19,7 +19,6 @@ body {
     margin: 0px;
 }
 
-
 header {
     position: absolute;
     top: 55vh;
@@ -70,67 +69,81 @@ main.noGrid {
 
 }
 
+.CAContainer {
 
-/* Modal Core Areas styling */
+        height: 500px;
+        background-color: white;
+        margin: 1em;
 
-.hide {
-    display: none;
 }
-
-
-.modal-coreArea {
+/*animations CA*/
+.gridMeCA{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(60px, 150px));
     position: fixed;
-    left: 0;
-    top: 0;
-    z-index: 10;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
 }
 
-
-.modal-content {
-    background-color: #fefefe;
-    border: 1px solid red;
-    margin: 1em;
-
+.moveMeUpCA {
+    animation: moveMeUpCA 1s forwards ease;
 }
 
+.moveMeUpCA img {width:80px;
+margin:1em;}
 
+.moveMeUpCA h2 {display: none;}
+
+@keyframes moveMeUpCA {
+
+    to {
+        transform: translateY(-130vh);
+        background-color: #777777;
+        width: 100vw;
+        padding-left: 10%;
+
+
+    }
+}
 
 
 /*program structure page*/
 
 .circle div img {
-   width:100%;
-   max-width: 400px;
+    width: 100%;
+    max-width: 400px;
 
 }
 
-.gridMe { display: grid;
-        grid-template-columns: repeat(4, minmax(60px, 40px));
-        position: fixed;}
+.gridMe {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(60px, 40px));
+    position: fixed;
+}
 
-.semesterContainer{height:1000px;
-background-color: white;
-margin:1em;}
+.semesterContainer {
+    height: 500px;
+    background-color: white;
+    margin: 1em;
+}
 
-/*animations*/
+/*animationsPR*/
 
 .moveMeUp {
     animation: moveMeUp 1s forwards ease;
 }
 
 @keyframes moveMeUp {
-    from {padding-left:25%;}
+    from {
+        padding-left: 25%;
+    }
     to {
-        transform:translateY(-90vh);
+        transform: translateY(-90vh);
         background-color: #777777;
         width: 100%;
-        padding-left:25%;
+        padding-left: 25%;
 
     }
 }
+
 .circle div:hover {
     cursor: pointer;
 }
@@ -197,10 +210,10 @@ footer a {
     cursor: pointer;
     position: fixed;
     z-index: 1;
+    background-color: #777777;
     top: 10px;
     right: 30px;
 }
-
 
 .main-nav {
     height: 100%;
@@ -306,8 +319,38 @@ a.highlighted {
         height: auto;
     }
 
+    /*animations CA*/
+.gridMeCA{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(60px, 150px));
+    position: fixed;
+}
+
+.moveMeUpCA {
+    animation: moveMeUpCA 1s forwards ease;
+}
+
+.moveMeUpCA img {width:80px;
+margin:1em;}
+
+.moveMeUpCA h2 {display: none;}
+
+@keyframes moveMeUpCA {
+
+    to {
+        transform: translateY(-130vh);
+        background-color: #777777;
+        width: 100vw;
+        padding-left: 10%;
+
+
+    }
+}
+
+
+
     /*program*/
-     .circle {
+    .circle {
         display: grid;
         grid-template-columns: repeat(2, minmax(200px, 1fr));
         grid-gap: 1.5rem;
@@ -315,21 +358,24 @@ a.highlighted {
 
     }
 
-    aside.gridMe { display: grid;
+    aside.gridMe {
+        display: grid;
         grid-template-columns: repeat(4, minmax(60px, 40px));
-        position: fixed;}
+        position: fixed;
+    }
 
     /*animation*/
-
     @keyframes moveMeUp {
 
-    to {width:100%;
-        background-color: #777777;
-        height:9%;
-        transform:translateY(-90vh);
+        to {
+            width: 100%;
+            background-color: #777777;
+            height: 9%;
+            transform: translateY(-90vh);
+        }
     }
 }
-}
+
 @media only screen and (min-width: 60em) {
     /*grid*/
     main.grid {
@@ -363,16 +409,45 @@ a.highlighted {
         grid-column-gap: 10px;
         padding: 20px;
     }
+ /*animations CA*/
+.gridMeCA{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(60px, 150px));
+    position: fixed;
+}
+
+.moveMeUpCA {
+    animation: moveMeUpCA 1s forwards ease;
+}
+
+.moveMeUpCA img {width:80px;
+margin:1em;}
+
+.moveMeUpCA h2 {display: none;}
+
+@keyframes moveMeUpCA {
+
+    to {
+        transform: translateY(-160vh);
+        background-color: #777777;
+        width: 100vw;
+        padding-left: 10%;
+
+
+    }
+}
 
 
     /*program*/
+    aside {
+        display: flex;
+        width: 100vw;
+        ;
+        justify-content: center;
+    }
 
-    aside {display: flex;
-        width:100vw;;
-    justify-content: center;}
-
-    aside.gridMe {grid-template-rows: 2em
-
+    aside.gridMe {
+        grid-template-rows: 2em
     }
 
     .circle {
@@ -385,9 +460,9 @@ a.highlighted {
 
     .semesterContainer {
         background-color: white;
-        height:300px;
-        width:100%;
-        margin:1em;
+        height: 300px;
+        width: 100%;
+        margin: 1em;
     }
 
 

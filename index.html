@@ -14,7 +14,8 @@
 
     <!--- this div is gonna be the background img-->
     <img class="logo" src="images/logo.png" />
- <div class="wfb backImg">  <!---  <img class="background" src="" alt="background picture" />
+ <div class="wfb backImg">
+  <!---  <img class="background" src="" alt="background picture" />
 --->
         <header>
             <h1>CURRICULUM <br> MULTIMEDIA DESIGN</h1> </header>
@@ -42,46 +43,41 @@
     <section class="coreAreas">
 
 
-        <article class="business">
+        <article class="business"><a href="#businessP">
             <img class="businessimg" alt="business" src="images/business.png">
-         <h2>Business</h2>
+            <h2>Business</h2></a>
         </article>
-        <article class="communication">
+        <article class="communication"><a href="#communicationP">
              <img class="communicationimg" alt="communication" src="images/communication.png">
-        <h2>Communication and Presentation</h2>
+            <h2>Communication and Presentation</h2></a>
         </article>
         <article class="design">
+            <a href="#designP">
              <img class="designimg" alt="design" src="images/design.png">
-        <h2>Design and Visualization</h2>
+                <h2>Design and Visualization</h2></a>
         </article>
         <article class="development">
+            <a href="#developmentP">
              <img class="interactionimg" alt="development" src="images/development.png">
-        <h2>Interaction Development</h2>
+                <h2>Interaction Development</h2></a>
         </article>
     </section>
 
-    <!---this is the div for the Core Areas MODAL --->
+ <main class="coreAreasDes">
+        <a name="businessP">
+            <div class="CAContainer businessP"><h1>Business</h1></div></a>
+        <a name="communicationP">
+            <div class="CAContainer communicationP"><h1>Communication</h1></div>
+        </a>
+        <a name="designP">
+            <div class="CAContainer designP"><h1>Design</h1></div>
+        </a>
+        <a name="developmentP">
+            <div class="CAContainer developmentP"><h1>Development</h1></div>
+        </a>
+    </main>
 
-    <div class="modal-coreArea hide">
-    <aside class="modal-content">
-    <h1 class="modal-coreArea-title">
-    BUSINESS
-    </h1>
-    <p class="modal-coreArea-text">The core area is intended to provide the students with the necessary qualifications to understand
-the commercial framework of the business and digital business models, apply digital user data and
-take an innovative approach to multimedia production. Students must understand the multimedia
-designer’s role in the value chain in a multimedia production and be able to plan, manage and carry
-out a multimedia production.
-    </p>
-    <h2 class="knowledge">KNOWLEDGE</h2>
-        <p class="KnowText">Description of the knowledge </p>
-    <h2 class="skills">SKILLS</h2>
-       <p class="skillsText">Description of the skills </p>
-    <h2 class="competencies">COMPETENCIES</h2>
-        <p class="compText"> Description of the competencies</p>
-    </aside>
 
-    </div>
     <footer>
         <div>
             <img class="iconLocation" src="images/11205-200.png">
@@ -105,7 +101,7 @@ out a multimedia production.
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="home.js"></script>
 </body>
 
 </html>
