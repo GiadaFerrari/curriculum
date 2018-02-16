@@ -105,9 +105,32 @@ main.noGrid {
    width:100%;
    max-width: 400px;
 
-
 }
 
+.gridMe { display: grid;
+        grid-template-columns: repeat(4, minmax(60px, 40px));
+        position: fixed;}
+
+.semesterContainer{height:1000px;
+background-color: white;
+margin:1em;}
+
+/*animations*/
+
+.moveMeUp {
+    animation: moveMeUp 1s forwards ease;
+}
+
+@keyframes moveMeUp {
+    from {padding-left:25%;}
+    to {
+        transform:translateY(-90vh);
+        background-color: #777777;
+        width: 100%;
+        padding-left:25%;
+
+    }
+}
 .circle div:hover {
     cursor: pointer;
 }
@@ -284,13 +307,28 @@ a.highlighted {
     }
 
     /*program*/
-     main.circle {
+     .circle {
         display: grid;
         grid-template-columns: repeat(2, minmax(200px, 1fr));
         grid-gap: 1.5rem;
         grid-template-rows: 20em;
 
     }
+
+    aside.gridMe { display: grid;
+        grid-template-columns: repeat(4, minmax(60px, 40px));
+        position: fixed;}
+
+    /*animation*/
+
+    @keyframes moveMeUp {
+
+    to {width:100%;
+        background-color: #777777;
+        height:9%;
+        transform:translateY(-90vh);
+    }
+}
 }
 @media only screen and (min-width: 60em) {
     /*grid*/
@@ -329,18 +367,30 @@ a.highlighted {
 
     /*program*/
 
+    aside {display: flex;
+        width:100vw;;
+    justify-content: center;}
 
-    main.circle {
+    aside.gridMe {grid-template-rows: 2em
+
+    }
+
+    .circle {
         display: grid;
         grid-template-columns: repeat(4, minmax(200px, 1fr));
         grid-gap: 1.5rem;
-        grid-template-rows: 20em;*
+        grid-template-rows: 20em;
 
     }
 
-    .circle div {
-
+    .semesterContainer {
+        background-color: white;
+        height:300px;
+        width:100%;
+        margin:1em;
     }
+
+
 
 
 }
