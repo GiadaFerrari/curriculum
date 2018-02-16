@@ -53,14 +53,14 @@ main.noGrid {
     display: block;
 }
 
- aside {
-        display: flex;
-        width: 100vw;
-        ;
-        justify-content: center;
-    }
-/* core Areas section */
+aside {
+    display: flex;
+    width: 100vw;
+    ;
+    justify-content: center;
+}
 
+/* core Areas section */
 
 .CoreAreaTitle {
     padding-top: 10vh;
@@ -334,6 +334,9 @@ a.highlighted {
 
         to {
             transform: translateY(-126.5vh);
+            background-color: #777777;
+            width: 100vw;
+
 
         }
     }
@@ -361,6 +364,7 @@ a.highlighted {
         to {
             width: 100%;
             transform: translateY(-90vh);
+            background-color: #777777;
         }
     }
 }
@@ -403,16 +407,17 @@ a.highlighted {
 
         to {
             transform: translateY(-154.5vh);
+            background-color: #777777;
+            width: 100vw;
+
 
         }
     }
 
 
     /*program*/
-
-
     aside.gridMe {
-        grid-template-rows: 2em
+        grid-template-rows: 4em
     }
 
     .circle {
@@ -428,6 +433,18 @@ a.highlighted {
         height: 300px;
         width: 100%;
         margin: 1em;
+
+    }
+
+
+
+     @keyframes moveMeUp {
+
+        to {
+            width: 100%;
+            transform: translateY(-89vh);
+            background-color: #777777;
+        }
     }
 
 
