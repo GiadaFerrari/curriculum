@@ -1,6 +1,6 @@
 body {
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
     background-color: #777777;
     font-family: "Lato", sans-serif;
     overflow-x: hidden;
@@ -19,7 +19,6 @@ body {
     margin: 0px;
 }
 
-.backImg img {margin-right: 0px;}
 
 header {
     position: absolute;
@@ -48,67 +47,70 @@ main.noGrid {
 }
 
 /* core Areas section */
-    .CoreAreaTitle {
-        padding-top: 10vh;
-        text-transform: uppercase;
-        padding-left: 10vw;
-    }
+
+.CoreAreaTitle {
+    padding-top: 10vh;
+    text-transform: uppercase;
+    padding-left: 10vw;
+}
+
 .coreAreas img:hover {
     cursor: pointer;
 
 }
 
-    .coreAreas img {
+.coreAreas img {
 
-        width: 100%;
+    width: 100%;
 
-    }
+}
 
-    .coreAreas h2 {
-        text-align: center;
+.coreAreas h2 {
+    text-align: center;
 
-    }
-
-
-    /* Modal Core Areas styling */
-    .hide {
-        display: none;
-    }
+}
 
 
-    .modal-coreArea {
-        position: fixed;
-        left: 0;
-        top: 0;
-        z-index: 10;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.7);
-    }
+/* Modal Core Areas styling */
+
+.hide {
+    display: none;
+}
 
 
-    .modal-content {
-        background-color: #fefefe;
-        border: 1px solid red;
-        margin: 1em;
+.modal-coreArea {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
 
-    }
+
+.modal-content {
+    background-color: #fefefe;
+    border: 1px solid red;
+    margin: 1em;
+
+}
 
 
 
 
 /*program structure page*/
 
-.circle div {
-    width: 20em;
-    background-color: white;
-    border-radius: 100%;
-    height: 20em;
-    margin: 1em;
+.circle div img {
+   width:100%;
+   max-width: 400px;
+
 
 }
 
-.circle div:hover {cursor:pointer;}
+.circle div:hover {
+    cursor: pointer;
+}
 
 /*footer*/
 
@@ -225,7 +227,72 @@ a.highlighted {
     width: 0;
 }
 
+
 @media only screen and (min-width: 40em) {
+    /*footer*/
+    footer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        background-color: white;
+        position: absolute;
+        width: 100vw;
+        margin-top: 30px;
+
+
+    }
+
+    footer div {
+        margin: auto;
+        font-family: "Lato", sans-serif;
+
+    }
+
+    footer div h3 {
+        color: black;
+        text-decoration: none;
+        text-align: center;
+    }
+
+    footer div h2 {
+        font-size: 21px;
+    }
+
+    footer a {
+        color: black;
+        text-decoration: none;
+    }
+
+    .iconLocation {
+        display: block;
+        width: 35px;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: -13px;
+    }
+
+    .footerLogo {
+        width: 25vh;
+        margin: auto;
+
+    }
+
+    .icons {
+        width: 20px;
+        margin: auto;
+        margin-right: 10px;
+        height: auto;
+    }
+
+    /*program*/
+     main.circle {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(200px, 1fr));
+        grid-gap: 1.5rem;
+        grid-template-rows: 20em;
+
+    }
+}
+@media only screen and (min-width: 60em) {
     /*grid*/
     main.grid {
         display: grid;
@@ -234,15 +301,9 @@ a.highlighted {
         grid-template-rows: 20em;
     }
 
-    main.circle {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(7em, 1fr));
-        grid-gap: 1.5rem;
-        grid-template-rows: 20em;
-
-    }
 
 
+    /*navigation*/
     .open {
         width: 250px;
     }
@@ -257,12 +318,29 @@ a.highlighted {
         width: 200px;
     }
 
-
+    /*core areas*/
     .coreAreas {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-column-gap: 10px;
         padding: 20px;
     }
+
+
+    /*program*/
+
+
+    main.circle {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(200px, 1fr));
+        grid-gap: 1.5rem;
+        grid-template-rows: 20em;*
+
+    }
+
+    .circle div {
+
+    }
+
 
 }
