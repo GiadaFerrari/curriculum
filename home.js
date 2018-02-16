@@ -31,15 +31,15 @@ function closeNav() {
 
 }
 //core areas slider
-let coreArea = document.querySelector('.coreAreas');
+let coreArea = document.querySelector('.circle');
 
 window.onscroll = function(){sliderMobile()}
 function sliderMobile() {
     if (document.body.scrollTop > 600 || document.documentElement.scrollTop>600){
         console.log ('hi papa');
-        coreArea.classList.add('moveMeUpCA', 'gridMeCA');
+        coreArea.classList.add('moveMeUpCA', 'gridMe');
         coreArea.classList.remove('coreAreas')
 
     } else { console.log ('hi mama');
             coreArea.classList.add('coreAreas')
-     coreArea.classList.remove('moveMeUpCA', 'gridMeCA')}}
+     coreArea.classList.remove('moveMeUpCA', 'gridMe')}}

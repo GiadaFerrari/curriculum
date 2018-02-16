@@ -71,26 +71,27 @@ main.noGrid {
 
 .CAContainer {
 
-        height: 500px;
-        background-color: white;
-        margin: 1em;
+    height: 500px;
+    background-color: white;
+    margin: 1em;
 
 }
+
 /*animations CA*/
-.gridMeCA{
-    display: grid;
-    grid-template-columns: repeat(4, minmax(60px, 150px));
-    position: fixed;
-}
+
 
 .moveMeUpCA {
     animation: moveMeUpCA 1s forwards ease;
 }
 
-.moveMeUpCA img {width:80px;
-margin:1em;}
+.moveMeUpCA img {
+    width: 80px;
+    margin: 1em;
+}
 
-.moveMeUpCA h2 {display: none;}
+.moveMeUpCA h2 {
+    display: none;
+}
 
 @keyframes moveMeUpCA {
 
@@ -320,32 +321,24 @@ a.highlighted {
     }
 
     /*animations CA*/
-.gridMeCA{
-    display: grid;
-    grid-template-columns: repeat(4, minmax(60px, 150px));
-    position: fixed;
-}
 
-.moveMeUpCA {
-    animation: moveMeUpCA 1s forwards ease;
-}
-
-.moveMeUpCA img {width:80px;
-margin:1em;}
-
-.moveMeUpCA h2 {display: none;}
-
-@keyframes moveMeUpCA {
-
-    to {
-        transform: translateY(-130vh);
-        background-color: #777777;
-        width: 100vw;
-        padding-left: 10%;
-
-
+    aside.circle.moveMeUpCA {
+        grid-template-rows: 6em;
     }
-}
+
+
+
+    @keyframes moveMeUpCA {
+
+        to {
+            transform: translateY(-130vh);
+            background-color: #777777;
+            width: 100vw;
+            padding-left: 10%;
+
+
+        }
+    }
 
 
 
@@ -409,33 +402,29 @@ margin:1em;}
         grid-column-gap: 10px;
         padding: 20px;
     }
- /*animations CA*/
-.gridMeCA{
-    display: grid;
-    grid-template-columns: repeat(4, minmax(60px, 150px));
-    position: fixed;
-}
-
-.moveMeUpCA {
-    animation: moveMeUpCA 1s forwards ease;
-}
-
-.moveMeUpCA img {width:80px;
-margin:1em;}
-
-.moveMeUpCA h2 {display: none;}
-
-@keyframes moveMeUpCA {
-
-    to {
-        transform: translateY(-160vh);
-        background-color: #777777;
-        width: 100vw;
-        padding-left: 10%;
+    /*animations CA*/
 
 
+    .moveMeUpCA img {
+        width: 80px;
+        margin: 1em;
     }
-}
+
+    .moveMeUpCA h2 {
+        display: none;
+    }
+
+    @keyframes moveMeUpCA {
+
+        to {
+            transform: translateY(-160vh);
+            background-color: #777777;
+            width: 100vw;
+
+
+
+        }
+    }
 
 
     /*program*/
