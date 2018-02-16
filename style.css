@@ -53,10 +53,9 @@ main.noGrid {
     display: block;
 }
 
-aside {
+aside.moveMeUp {
     display: flex;
     width: 100vw;
-    ;
     justify-content: center;
 }
 
@@ -91,6 +90,12 @@ aside {
     margin: 1em;
 
 }
+aside.moveMeUpCA {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+}
+
 
 /*animations CA*/
 
