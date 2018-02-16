@@ -8,9 +8,22 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body onscroll="closeNav()">
+   <!---- NAV --->
+   <span onclick="openNav()" class="burger-menu">&#9776;</span>
+    <nav id="sidenav" class="main-nav">
+
+       <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">HOME</a>
+        <a href="program.html">PROGRAM STRUCTURE</a>
+        <a href="admission.html">ADMISSION</a>
+        <a href="future.html" class="highlighted">FUTURE</a>
+    </nav>
+
     <!--- this div is gonna be the background img-->
-    <img class="images/logo" src="logo.png" alt="logo">
+
+    <img class="logo" src="images/logo.png" alt="logo">
+
     <div class="wfb backImg">
        <img class="background" src="" alt="background picture">
         <header>
@@ -18,13 +31,7 @@
         </header>
     </div>
 
-   <!-- <nav>
-        <a href="index.html">HOME</a>
-        <a href="program.html">PROGRAM STRUCTURE</a>
-        <a href="admission.html">ADMISSION</a>
-        <a href="future.html">FUTURE</a>
-    </nav>
--->
+
     <main class="grid">
         <div class="wf contLeft"><h1>JOB OPPORTUNITIES</h1>
         <p class=""></p></div>
