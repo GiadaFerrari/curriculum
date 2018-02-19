@@ -1,6 +1,10 @@
 body {
+    margin: 0;
+    padding: 0;
     background-color: #777777;
     font-family: "Lato", sans-serif;
+    overflow-x: hidden;
+    max-width: 99vw
 }
 
 .wf {
@@ -9,17 +13,24 @@ body {
 
 .backImg {
     position: relative;
-    top: 10em;
-    left: 3em;
+    top: 5em;
+    left: 0em;
     height: 100vh;
-    width: 100vw;
-
+    margin: 0px;
 }
 
-header {
+.title {
     position: absolute;
     top: 55vh;
     left: 2vw;
+}
+
+header {
+    position: fixed;
+    background-color: #777777;
+    height: 5em;
+    width: 100%;
+    z-index: 111;
 }
 
 .logo {
@@ -42,68 +53,116 @@ main.noGrid {
     display: block;
 }
 
+aside.moveMeUp {
+    width: 100vw;
+    justify-content: center;
+}
+
 /* core Areas section */
-    .CoreAreaTitle {
-        padding-top: 10vh;
-        text-transform: uppercase;
-        padding-left: 10vw;
-    }
+
+.CoreAreaTitle {
+    padding-top: 10vh;
+    text-transform: uppercase;
+    padding-left: 10vw;
+}
+
 .coreAreas img:hover {
     cursor: pointer;
 
 }
 
-    .coreAreas img {
+.coreAreas img {
 
-        width: 100%;
+    width: 100%;
+
+}
+
+.coreAreas h2 {
+    text-align: center;
+
+}
+
+.CAContainer {
+
+    height: 500px;
+    background-color: white;
+    margin: 1em;
+
+}
+
+aside.moveMeUpCA {
+    width: 100vw;
+    justify-content: center;
+}
+
+
+/*animations CA*/
+
+.moveMeUpCA {
+    animation: moveMeUpCA 1s forwards ease;
+}
+
+
+@keyframes moveMeUpCA {
+
+    to {
+        transform: translateY(-126.5vh);
+        background-color: #777777;
+        width: 100vw;
 
     }
-
-    .coreAreas h2 {
-        text-align: center;
-
-    }
-
-
-    /* Modal Core Areas styling */
-    .hide {
-        display: none;
-    }
-
-
-    .modal-coreArea {
-        position: fixed;
-        left: 0;
-        top: 0;
-        z-index: 10;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.7);
-    }
-
-
-    .modal-content {
-        background-color: #fefefe;
-        border: 1px solid red;
-        margin: 1em;
-
-    }
-
-
+}
 
 
 /*program structure page*/
 
-.circle div {
-    width: 20em;
-    background-color: white;
-    border-radius: 100%;
-    height: 20em;
-    margin: 1em;
-    display: inline;
+div.padMe {
+    padding-top: 8em;
+    animation: scrollMe 4s forwards;
 }
 
-.circle div:hover {cursor:pointer;}
+@keyframes scrollMe {
+    50%{padding-top:8em;}
+    100% {padding-top: .5em;}
+}
+
+.circle div img {
+    width: 100%;
+    max-width: 400px;
+
+}
+
+.gridMe {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(60px, 40px));
+    position: fixed;
+}
+
+.semesterContainer {
+    height: 500px;
+    background-color: white;
+    margin: 1em;
+}
+
+/*animationsPR*/
+
+.moveMeUp {
+    animation: moveMeUp 1s forwards ease;
+}
+
+@keyframes moveMeUp {
+
+    to {
+        transform: translateY(-89vh);
+        background-color: #777777;
+        width: 100%;
+
+    }
+}
+
+.circle div:hover {
+    cursor: pointer;
+}
 
 /*footer*/
 
@@ -167,10 +226,10 @@ footer a {
     cursor: pointer;
     position: fixed;
     z-index: 1;
+    background-color: #777777;
     top: 10px;
     right: 30px;
 }
-
 
 .main-nav {
     height: 100%;
@@ -220,7 +279,107 @@ a.highlighted {
     width: 0;
 }
 
+
 @media only screen and (min-width: 40em) {
+    /*footer*/
+    footer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        background-color: white;
+        position: absolute;
+        width: 100vw;
+        margin-top: 30px;
+
+
+    }
+
+    footer div {
+        margin: auto;
+        font-family: "Lato", sans-serif;
+
+    }
+
+    footer div h3 {
+        color: black;
+        text-decoration: none;
+        text-align: center;
+    }
+
+    footer div h2 {
+        font-size: 21px;
+    }
+
+    footer a {
+        color: black;
+        text-decoration: none;
+    }
+
+    .iconLocation {
+        display: block;
+        width: 35px;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: -13px;
+    }
+
+    .footerLogo {
+        width: 25vh;
+        margin: auto;
+
+    }
+
+    .icons {
+        width: 20px;
+        margin: auto;
+        margin-right: 10px;
+        height: auto;
+    }
+
+    /*animations CA*/
+    aside.circle.moveMeUpCA {
+        grid-template-rows: 4em;
+    }
+
+
+
+    @keyframes moveMeUpCA {
+
+        to {
+            transform: translateY(-126.5vh);
+            background-color: #777777;
+            width: 100vw;
+
+
+        }
+    }
+
+
+
+    /*program*/
+    .circle {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(200px, 1fr));
+        grid-gap: 1.5rem;
+    }
+
+    aside.gridMe {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(60px, 40px));
+        position: fixed;
+    }
+
+    /*animation*/
+    @keyframes moveMeUp {
+
+        to {
+            width: 100%;
+            transform: translateY(-89vh);
+            background-color: #777777;
+        }
+    }
+}
+
+@media only screen and (min-width: 60em) {
     /*grid*/
     main.grid {
         display: grid;
@@ -229,15 +388,9 @@ a.highlighted {
         grid-template-rows: 20em;
     }
 
-    main.circle {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(7em, 1fr));
-        grid-gap: 1.5rem;
-        grid-template-rows: 20em;
-
-    }
 
 
+    /*navigation*/
     .open {
         width: 250px;
     }
@@ -251,16 +404,60 @@ a.highlighted {
         left: 1em;
         width: 200px;
     }
-}
 
-@media only screen and (min-width: 60em) {
-
-
+    /*core areas*/
     .coreAreas {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-column-gap: 10px;
         padding: 20px;
     }
+    /*animations CA*/
+    @keyframes moveMeUpCA {
+
+        to {
+            transform: translateY(-154.5vh);
+            background-color: #777777;
+            width: 100vw;
+
+
+        }
+    }
+
+
+    /*program*/
+    aside.gridMe {
+        grid-template-rows: 4em
+    }
+
+    .circle {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(200px, 1fr));
+        grid-gap: 1.5rem;
+        grid-template-rows: 20em;
+
+    }
+
+    .semesterContainer {
+        background-color: white;
+        height: 300px;
+        width: 100%;
+        margin: 1em;
+
+    }
+
+
+
+    @keyframes moveMeUp {
+
+        to {
+            width: 100%;
+            transform: translateY(-89vh);
+            background-color: #777777;
+        }
+    }
+
+
+
 
 }

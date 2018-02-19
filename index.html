@@ -9,13 +9,19 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body onscroll="closeNav()"> <span onclick="openNav()" class="burger-menu">&#9776;</span>
-    <nav id="sidenav" class="main-nav"> <a href="#" class="closebtn" onclick="closeNav()">&times;</a> <a href="index.html" class="highlighted">HOME</a> <a href="program.html">PROGRAM STRUCTURE</a> <a href="admission.html">ADMISSION</a> <a href="future.html">FUTURE</a> </nav>
-    <!--- this div is gonna be the background img--><img class="logo" src="images/logo.png" />
-    <div class="wfb backImg"> <img class="background" src="" alt="background picture" />
+<body onscroll="closeNav()">
 
-        <header>
-            <h1>CURRICULUM <br> MULTIMEDIA DESIGN</h1> </header>
+    <header>  <img class="logo" src="images/logo.png" />
+   <span onclick="openNav()" class="burger-menu">&#9776;</span>
+    <nav id="sidenav" class="main-nav"> <a href="#" class="closebtn" onclick="closeNav()">&times;</a> <a href="index.html" class="highlighted">HOME</a> <a href="program.html">PROGRAM</a> <a href="admission.html">ADMISSION</a> <a href="future.html">FUTURE</a> </nav>
+
+    <!--- this div is gonna be the background img-->
+   </header>
+ <div class="wfb backImg">
+  <!---  <img class="background" src="" alt="background picture" />
+--->
+       <div class="title">
+           <h1>CURRICULUM <br> MULTIMEDIA DESIGN</h1></div>
     </div>
 
     <main class="grid">
@@ -37,49 +43,29 @@
       <h1 class="CoreAreaTitle">Core Areas</h1>
 
 
-    <section class="coreAreas">
+     <aside class="circle">
+        <div><a href="#businessP"><img src="images/w-circle.png" alt="1st Semester"></a></div>
+        <div> <a href="#communicationP"><img src="images/w-circle.png" alt="1st Semester"></a></div>
+        <div><a href="#designP"><img src="images/w-circle.png" alt="1st Semester"></a></div>
+        <div><a href="#developmentP"><img src="images/w-circle.png" alt="1st Semester"></a></div>
 
-
-        <article class="business">
-            <img class="businessimg" alt="business" src="images/business.png">
-         <h2>Business</h2>
-        </article>
-        <article class="communication">
-             <img class="communicationimg" alt="communication" src="images/communication.png">
-        <h2>Communication and Presentation</h2>
-        </article>
-        <article class="design">
-             <img class="designimg" alt="design" src="images/design.png">
-        <h2>Design and Visualization</h2>
-        </article>
-        <article class="development">
-             <img class="interactionimg" alt="development" src="images/development.png">
-        <h2>Interaction Development</h2>
-        </article>
-    </section>
-
-    <!---this is the div for the Core Areas MODAL --->
-
-    <div class="modal-coreArea hide">
-    <aside class="modal-content">
-    <h1 class="modal-coreArea-title">
-    BUSINESS
-    </h1>
-    <p class="modal-coreArea-text">The core area is intended to provide the students with the necessary qualifications to understand
-the commercial framework of the business and digital business models, apply digital user data and
-take an innovative approach to multimedia production. Students must understand the multimedia
-designer’s role in the value chain in a multimedia production and be able to plan, manage and carry
-out a multimedia production.
-    </p>
-    <h2 class="knowledge">KNOWLEDGE</h2>
-        <p class="KnowText">Description of the knowledge </p>
-    <h2 class="skills">SKILLS</h2>
-       <p class="skillsText">Description of the skills </p>
-    <h2 class="competencies">COMPETENCIES</h2>
-        <p class="compText"> Description of the competencies</p>
     </aside>
 
-    </div>
+ <main class="coreAreasDes">
+        <a name="businessP">
+            <div id="businessP" class="CAContainer businessP"><h1>Business</h1></div></a>
+        <a name="communicationP">
+            <div id="communicationP" class="CAContainer communicationP"><h1>Communication</h1></div>
+        </a>
+        <a name="designP">
+            <div id="designP" class="CAContainer designP"><h1>Design</h1></div>
+        </a>
+        <a name="developmentP">
+            <div id="developmentP" class="CAContainer developmentP"><h1>Development</h1></div>
+        </a>
+    </main>
+
+
     <footer>
         <div>
             <img class="iconLocation" src="images/11205-200.png">
@@ -103,7 +89,7 @@ out a multimedia production.
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="home.js"></script>
 </body>
 
 </html>
