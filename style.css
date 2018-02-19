@@ -381,7 +381,7 @@ a.highlighted {
 
 @media only screen and (min-width: 60em) {
     /*grid*/
-    main.grid {
+    section.grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
         grid-gap: 1.5rem;

@@ -116,7 +116,6 @@ function showData(e) {
         appendHere.appendChild(clone);
 
 
-
     })
 }
 

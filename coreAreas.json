@@ -1,0 +1,35 @@
+[
+        {
+            "name": "Business",
+            "id":"businessP",
+            "ects": 15,
+            "knowledge": " ",
+            "skills": " ",
+            "competencies": " "
+        },
+        {
+            "name": "Communication and Presentation",
+            "id":"communicationP",
+            "ects": 15,
+            "knowledge": " ",
+            "skills": " ",
+            "competencies": " "
+        },
+        {
+            "name": "Design and Visualisation",
+            "id":"designP",
+            "ects": 25,
+            "knowledge": " ",
+            "skills": " ",
+            "competencies": " "
+        },
+        {
+            "name": "Interaction Development",
+            "id":"developmentP",
+            "ects": 15,
+            "knowledge": " ",
+            "skills": " ",
+            "competencies": " "
+        }
+
+    ]

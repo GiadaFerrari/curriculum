@@ -62,9 +62,40 @@ CAAnchor.forEach((e) => {
             let cont = document.querySelector(link);
             console.log(cont)
 
-            cont.classList.add('padMe')
+            cont.classList.add('padMe');
 
 
         }
     }
 )
+
+//dynamic
+
+const template = document.querySelector('template').content;
+const source = 'coreAreas.json'
+
+fetch(source).then(result => result.json()).then(data => showData(data));
+
+
+function showData(e) {
+
+    console.log(e)
+    e.forEach(elem => {
+
+        const clone = template.cloneNode(true);
+        const appendHere = document.querySelector('.coreAreasDes');
+
+
+        clone.querySelector('a').name = elem.id;
+        clone.querySelector('.name').textContent = elem.name;
+        clone.querySelector('.ects').textContent = elem.ects;
+        clone.querySelector('.knowledge').textContent = elem.knowledge;
+        clone.querySelector('.skills').textContent = elem.skills;
+        clone.querySelector('.competencies').textContent = elem.competencies;
+
+        appendHere.appendChild(clone);
+        console.log(elem.knowledge)
+
+
+    })
+}
