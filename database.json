@@ -77,9 +77,8 @@
             "competencies": " ",
             "exams": [{
                 "name": "Internship Exam",
-                "time": "End of Internship",
+                "time": "end of the Internship",
                 "ects": 15,
-                "assesment": "7-point grading scale",
                 "evaluation": "Internal",
                 "short description": " ",
 
