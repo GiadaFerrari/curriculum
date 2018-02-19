@@ -36,44 +36,51 @@ function closeNav() {
 
 let semesters = document.querySelector('.circle');
 
-window.onscroll = function(){sliderMobile()}
+window.onscroll = function () {
+    sliderMobile()
+}
+
 function sliderMobile() {
-    if (document.body.scrollTop > 600 || document.documentElement.scrollTop>600){
-        console.log ('hi papa');
+    if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+        console.log('hi papa');
         semesters.classList.add('moveMeUp', 'gridMe');
 
 
-    } else { console.log ('hi mama');
-            semesters.classList.remove('moveMeUp', 'gridMe')}/*else if (document.body.scrollTop < 100 || document.documentElement.scrollTop < 100){
-         console.log ('hi mama');
-        semesters.classList.remove('moveMeUp', 'gridMe');}*/
+    } else {
+        console.log('hi mama');
+        semesters.classList.remove('moveMeUp', 'gridMe')
+    }
+    /*else if (document.body.scrollTop < 100 || document.documentElement.scrollTop < 100){
+             console.log ('hi mama');
+            semesters.classList.remove('moveMeUp', 'gridMe');}*/
 
 }
 
 
 let semAnchor = document.querySelectorAll('.circle a');
 let semTarget = document.querySelectorAll('.semesterContainer')
-semAnchor.forEach((e)=>{
+semAnchor.forEach((e) => {
+
+
     e.addEventListener('click', padMe);
-    function padMe(e){
-
-        semTarget.forEach((a)=>{
-        a.classList.remove('padMe')})
-
-        let link = this.getAttribute("href");
-        let cont = document.querySelector(link);
-        console.log(cont)
-        cont.classList.add('padMe')
-        cont.addEventListener('scroll', ()=>{cont.classList.remove('padMe')
-        console.log('hihi')                                })
 
 
+        function padMe(e) {
 
-    }});
+            semTarget.forEach((a) => {
+                a.classList.remove('padMe')
+            })
+            let link = this.getAttribute("href");
+            let cont = document.querySelector(link);
+            console.log(cont)
+            if (link != "#sem4"){
+            cont.classList.add('padMe')}
 
-$(document).ready(function() {
-   $('.circle').localScroll({duration:800});
-});
+
+        }
+    }
+);
+
 
 
 
@@ -81,4 +88,3 @@ $(document).ready(function() {
 
 
 //semAnchor.forEach((anchors)=>{window.scroll({behavior: 'smooth'});})
-

@@ -118,7 +118,13 @@ aside.moveMeUpCA {
 /*program structure page*/
 
 div.padMe {
-    margin-top: 17em;
+    padding-top: 8em;
+    animation: scrollMe 4s forwards;
+}
+
+@keyframes scrollMe {
+    50%{padding-top:8em;}
+    100% {padding-top: .5em;}
 }
 
 .circle div img {
