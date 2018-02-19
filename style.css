@@ -54,7 +54,6 @@ main.noGrid {
 }
 
 aside.moveMeUp {
-    display: flex;
     width: 100vw;
     justify-content: center;
 }
@@ -90,6 +89,7 @@ aside.moveMeUp {
     margin: 1em;
 
 }
+
 aside.moveMeUpCA {
     display: flex;
     width: 100vw;
@@ -117,6 +117,10 @@ aside.moveMeUpCA {
 
 /*program structure page*/
 
+div.padMe {
+    margin-top: 17em;
+}
+
 .circle div img {
     width: 100%;
     max-width: 400px;
@@ -142,11 +146,9 @@ aside.moveMeUpCA {
 }
 
 @keyframes moveMeUp {
-    from {
-        padding-left: 25%;
-    }
+
     to {
-        transform: translateY(-90vh);
+        transform: translateY(-89vh);
         background-color: #777777;
         width: 100%;
 
@@ -353,8 +355,6 @@ a.highlighted {
         display: grid;
         grid-template-columns: repeat(2, minmax(200px, 1fr));
         grid-gap: 1.5rem;
-        grid-template-rows: 20em;
-
     }
 
     aside.gridMe {
@@ -368,7 +368,7 @@ a.highlighted {
 
         to {
             width: 100%;
-            transform: translateY(-90vh);
+            transform: translateY(-89vh);
             background-color: #777777;
         }
     }
@@ -443,7 +443,7 @@ a.highlighted {
 
 
 
-     @keyframes moveMeUp {
+    @keyframes moveMeUp {
 
         to {
             width: 100%;

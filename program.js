@@ -50,7 +50,35 @@ function sliderMobile() {
 
 }
 
-let semAnchor = document.querySelectorAll('.circle a')
+
+let semAnchor = document.querySelectorAll('.circle a');
+let semTarget = document.querySelectorAll('.semesterContainer')
+semAnchor.forEach((e)=>{
+    e.addEventListener('click', padMe);
+    function padMe(e){
+
+        semTarget.forEach((a)=>{
+        a.classList.remove('padMe')})
+
+        let link = this.getAttribute("href");
+        let cont = document.querySelector(link);
+        console.log(cont)
+        cont.classList.add('padMe')
+        cont.addEventListener('scroll', ()=>{cont.classList.remove('padMe')
+        console.log('hihi')                                })
+
+
+
+    }});
+
+$(document).ready(function() {
+   $('.circle').localScroll({duration:800});
+});
+
+
+
+
+
 
 //semAnchor.forEach((anchors)=>{window.scroll({behavior: 'smooth'});})
 
