@@ -8,10 +8,10 @@
             "competencies": " ",
             "exams": [{
                 "name": "Multimedia Production I",
-                "time": "End of 1st Semester",
+                "time": "end of 1st Semester",
                 "ects": 30,
                 "assesment": "7-point grading scale",
-                "evaluation": "Internal",
+                "evaluation": "internal",
                 "shortDescription": " "
 
         }],
@@ -29,10 +29,10 @@
             "competencies": " ",
             "exams": [{
                 "name": "Multimedia Production II",
-                "time": "End of 2nd Semester",
+                "time": "end of 2nd Semester",
                 "ects": 30,
                 "assesment": "7-point grading scale",
-                "evaluation": "External",
+                "evaluation": "external",
                 "short description": " "
 
 
@@ -52,18 +52,18 @@
             "competencies": " ",
             "exams": [{
                 "name": "Multimedia Production III",
-                "time": "Middle/End of 3rd Semester",
+                "time": "middle or the end of 3rd Semester",
                 "ects": 20,
                 "assesment": "7-point grading scale",
-                "evaluation": "Internal",
+                "evaluation": "internal",
                 "short description": " "
 
         }, {
                 "name": "Elective Program Element",
-                "time": "Middle/End of 3rd Semester",
+                "time": "middle or the end of 3rd Semester",
                 "ects": 10,
                 "assesment": "7-point grading scale",
-                "evaluation": "Internal"
+                "evaluation": "internal"
 
         }],
             "internship": 0,
@@ -87,10 +87,10 @@
 
         }, {
                 "name": "Final Exam Project",
-                "time": "End of 4th Semester",
+                "time": "end of 4th Semester",
                 "ects": 15,
                 "assesment": "7-point grading scale",
-                "evaluation": "External",
+                "evaluation": "external",
                 "short description": " "
 
         }],
