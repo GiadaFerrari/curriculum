@@ -1,8 +1,8 @@
-{
-    "semester": [
+[
 
         {
-            "semester": 1,
+            "semester": "1st",
+            "id":"sem1",
             "ects": 30,
             "knowledge": " ",
             "skills": " ",
@@ -13,15 +13,17 @@
                 "ects": 30,
                 "assesment": "7-point grading scale",
                 "evaluation": "Internal",
-                "short description": " "
+                "shortDescription": " "
 
         }],
             "electives": 0,
             "internship": 0,
             "abroad": 0
 
-    }, {
-            "semester": 2,
+    },
+        {
+            "semester": "2nd",
+            "id":"sem2",
             "ects": 30,
             "knowledge": " ",
             "skills": " ",
@@ -43,7 +45,8 @@
 
     },
         {
-            "semester": 3,
+            "semester": "3rd",
+            "id":"sem",
             "ects": 30,
             "knowledge": " ",
             "skills": " ",
@@ -70,7 +73,8 @@
 
     },
         {
-            "semester": 4,
+            "semester": "4th",
+            "id":"sem1",
             "ects": 30,
             "knowledge": " ",
             "skills": " ",
@@ -97,36 +101,4 @@
     }
 
 
-    ],
-    "coreArea": [
-        {
-            "name": "Business",
-            "ects": 15,
-            "knowledge": " ",
-            "skills": " ",
-            "competencies": " "
-        },
-        {
-            "name": "Communication and Presentation",
-            "ects": 15,
-            "knowledge": " ",
-            "skills": " ",
-            "competencies": " "
-        },
-        {
-            "name": "Design and Visualisation",
-            "ects": 25,
-            "knowledge": " ",
-            "skills": " ",
-            "competencies": " "
-        },
-        {
-            "name": "Interaction Development",
-            "ects": 15,
-            "knowledge": " ",
-            "skills": " ",
-            "competencies": " "
-        }
-
     ]
-}

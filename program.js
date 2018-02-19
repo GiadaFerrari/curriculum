@@ -63,26 +63,74 @@ semAnchor.forEach((e) => {
     e.addEventListener('click', padMe);
 
 
-        function padMe(e) {
+    function padMe(e) {
 
-            semTarget.forEach((a) => {
-                a.classList.remove('padMe')
-            })
-            let link = this.getAttribute("href");
-            let cont = document.querySelector(link);
-            console.log(cont)
-            if (link != "#sem4"){
-            cont.classList.add('padMe')}
-
-
+        semTarget.forEach((a) => {
+            a.classList.remove('padMe')
+        })
+        let link = this.getAttribute("href");
+        let cont = document.querySelector(link);
+        console.log(cont)
+        if (link != "#sem4") {
+            cont.classList.add('padMe')
         }
+
+
     }
-);
+});
+
+
+//dynamic
+
+const template = document.querySelector('template').content;
+const templateEx = document.querySelector('.examTem').content;
+const source = 'semesters.json'
+
+fetch(source).then(result => result.json()).then(data => showData(data));
+
+function showData(e) {
+
+    e.forEach(elem => {
+        console.log(elem[0].id)
+
+        const clone = template.cloneNode(true);
+        const cloneEx = templateEx.cloneNode(true);
+        const appendHere = document.querySelector('.semesters');
+        let exams = elem.exams
+
+
+        clone.querySelector('a').name = elem.id
+        clone.querySelector('.semN').textContent = elem.semesters
+        clone.querySelector('.ects').textContent = elem.ects
+        clone.querySelector('.knowledge').textContent = elem.knowledge
+        clone.querySelector('.skills').textContent = elem.skills
+        clone.querySelector('.competencies').textContent = elem.competencies
+        exams.forEach((ex) => {
+            cloneEx.querySelector('.examName').textContent = ex.name
+            cloneEx.querySelector('.ectsEx').textContent = ex.ects
+            cloneEx.querySelector('.timeEx').textContent = ex.time
+            cloneEx.querySelector('.evaluationEx').textContent = ex.evaluation
+            cloneEx.querySelector('.shortDes').textContent = ex.shortDescription
+        })
+        clone.appenChild(cloneEx);
+        appendHere.appendChild(clone);
+
+
+
+    })
+}
 
 
 
 
 
+/*   const clone = template.cloneNode(true);
 
+        const appendHere = document.querySelector(".appendMe" + elem.category)
 
-//semAnchor.forEach((anchors)=>{window.scroll({behavior: 'smooth'});})
+        clone.querySelector('.food').src = images + "small/" + elem.image + "-sm.jpg";
+
+        clone.querySelector('.name').textContent = elem.name;
+        clone.querySelector('.price').textContent = elem.price + ",-";
+        clone.querySelector('.description').textContent = elem.shortdescription;
+*/
