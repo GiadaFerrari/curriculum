@@ -91,7 +91,6 @@ aside.moveMeUp {
 }
 
 aside.moveMeUpCA {
-    display: flex;
     width: 100vw;
     justify-content: center;
 }

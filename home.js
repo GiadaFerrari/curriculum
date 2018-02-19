@@ -43,3 +43,28 @@ function sliderMobile() {
     } else { console.log ('hi mama');
             coreArea.classList.add('coreAreas')
      coreArea.classList.remove('moveMeUpCA', 'gridMe')}}
+
+
+let CAAnchor = document.querySelectorAll('.circle a');
+let CATarget = document.querySelectorAll('.CAContainer')
+CAAnchor.forEach((e) => {
+
+
+    e.addEventListener('click', padMe);
+
+
+        function padMe(e) {
+
+            CATarget.forEach((a) => {
+                a.classList.remove('padMe')
+            })
+            let link = this.getAttribute("href");
+            let cont = document.querySelector(link);
+            console.log(cont)
+
+            cont.classList.add('padMe')
+
+
+        }
+    }
+)
