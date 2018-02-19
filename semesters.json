@@ -1,5 +1,4 @@
 [
-
         {
             "semester": "1st",
             "id":"sem1",
@@ -84,7 +83,7 @@
                 "time": "end of the Internship",
                 "ects": 15,
                 "evaluation": "Internal",
-                "short description": " ",
+                "short description": " "
 
         }, {
                 "name": "Final Exam Project",

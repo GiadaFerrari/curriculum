@@ -31,6 +31,66 @@ function closeNav() {
 
 }
 
+//dynamic
+const template = document.querySelector('template').content;
+const templateEx = document.querySelector('.examTem')
+const source = 'semesters.json'
+
+fetch(source).then(result => result.json()).then(data => showData(data));
+
+
+function showData(e) {
+
+    console.log(e)
+    e.forEach(elem => {
+
+        const clone = template.cloneNode(true);
+        const cloneEx = templateEx.cloneNode(true);
+        const appendHere = document.querySelector('.semesters');
+        let exams = elem.exams
+
+
+        clone.querySelector('a').name = elem.id;
+        clone.querySelector('.semesterContainer').id = elem.id;
+
+
+        clone.querySelector('.semN').textContent = elem.semesters
+        clone.querySelector('.ects').textContent = elem.ects
+        clone.querySelector('.knowledge').textContent = elem.knowledge
+        clone.querySelector('.skills').textContent = elem.skills
+        clone.querySelector('.competencies').textContent = elem.competencies
+
+        if (elem.internship) {
+            let pInt = document.createElement('p');
+            pInt.textContent = " ";
+            clone.querySelector('.internship').appendChild(pInt)
+        }
+        if (elem.abroad) {
+            let pAbr = document.createElement('p');
+            pAbr.textContent = " ";
+            clone.querySelector('.abroad').appendChild(pAbr)
+        }
+        if (elem.electives) {
+            let pEle = document.createElement('p');
+             pEle.textContent = " ";
+        clone.querySelector('.electives').appendChild(pEle)
+        }
+
+
+        exams.forEach((ex) => {
+            console.log()
+            cloneEx.querySelector('.examName').textContent = ex.name;
+            cloneEx.querySelector('.ectsEx').textContent = ex.ects
+            cloneEx.querySelector('.timeEx').textContent = ex.time
+            cloneEx.querySelector('.evaluationEx').textContent = ex.evaluation
+            cloneEx.querySelector('.shortDes').textContent = ex.shortDescription
+        })
+        clone.querySelector('.examAppend').appenChild(cloneEx);
+        appendHere.appendChild(clone);
+
+
+    })
+}
 
 //program slide
 
@@ -78,58 +138,3 @@ semAnchor.forEach((e) => {
 
     }
 });
-
-
-//dynamic
-
-const template = document.querySelector('template').content;
-const templateEx = document.querySelector('.examTem').content;
-const source = 'semesters.json'
-
-fetch(source).then(result => result.json()).then(data => showData(data));
-
-function showData(e) {
-
-    e.forEach(elem => {
-        console.log(elem[0].id)
-
-        const clone = template.cloneNode(true);
-        const cloneEx = templateEx.cloneNode(true);
-        const appendHere = document.querySelector('.semesters');
-        let exams = elem.exams
-
-
-        clone.querySelector('a').name = elem.id
-        clone.querySelector('.semN').textContent = elem.semesters
-        clone.querySelector('.ects').textContent = elem.ects
-        clone.querySelector('.knowledge').textContent = elem.knowledge
-        clone.querySelector('.skills').textContent = elem.skills
-        clone.querySelector('.competencies').textContent = elem.competencies
-        exams.forEach((ex) => {
-            cloneEx.querySelector('.examName').textContent = ex.name
-            cloneEx.querySelector('.ectsEx').textContent = ex.ects
-            cloneEx.querySelector('.timeEx').textContent = ex.time
-            cloneEx.querySelector('.evaluationEx').textContent = ex.evaluation
-            cloneEx.querySelector('.shortDes').textContent = ex.shortDescription
-        })
-        clone.appenChild(cloneEx);
-        appendHere.appendChild(clone);
-
-
-    })
-}
-
-
-
-
-
-/*   const clone = template.cloneNode(true);
-
-        const appendHere = document.querySelector(".appendMe" + elem.category)
-
-        clone.querySelector('.food').src = images + "small/" + elem.image + "-sm.jpg";
-
-        clone.querySelector('.name').textContent = elem.name;
-        clone.querySelector('.price').textContent = elem.price + ",-";
-        clone.querySelector('.description').textContent = elem.shortdescription;
-*/
