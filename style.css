@@ -11,6 +11,8 @@ body {
     background-color: white;
 }
 
+.hide {display: none;}
+
 .backImg {
     position: relative;
     top: 5em;
@@ -139,7 +141,6 @@ div.padMe {
 }
 
 .semesterContainer {
-    height: 500px;
     background-color: white;
     margin: 1em;
 }
@@ -381,7 +382,7 @@ a.highlighted {
 
 @media only screen and (min-width: 60em) {
     /*grid*/
-    main.grid {
+    section.grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
         grid-gap: 1.5rem;
@@ -440,7 +441,6 @@ a.highlighted {
 
     .semesterContainer {
         background-color: white;
-        height: 300px;
         width: 100%;
         margin: 1em;
 

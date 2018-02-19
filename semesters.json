@@ -1,37 +1,38 @@
-{
-    "semester": [
-
+[
         {
-            "semester": 1,
+            "semester": "1st",
+            "id":"sem1",
             "ects": 30,
             "knowledge": " ",
             "skills": " ",
             "competencies": " ",
             "exams": [{
                 "name": "Multimedia Production I",
-                "time": "End of 1st Semester",
+                "time": "end of 1st Semester",
                 "ects": 30,
                 "assesment": "7-point grading scale",
-                "evaluation": "Internal",
-                "short description": " "
+                "evaluation": "internal",
+                "shortDescription": " "
 
         }],
             "electives": 0,
             "internship": 0,
             "abroad": 0
 
-    }, {
-            "semester": 2,
+    },
+        {
+            "semester": "2nd",
+            "id":"sem2",
             "ects": 30,
             "knowledge": " ",
             "skills": " ",
             "competencies": " ",
             "exams": [{
                 "name": "Multimedia Production II",
-                "time": "End of 2nd Semester",
+                "time": "end of 2nd Semester",
                 "ects": 30,
                 "assesment": "7-point grading scale",
-                "evaluation": "External",
+                "evaluation": "external",
                 "short description": " "
 
 
@@ -43,25 +44,26 @@
 
     },
         {
-            "semester": 3,
+            "semester": "3rd",
+            "id":"sem",
             "ects": 30,
             "knowledge": " ",
             "skills": " ",
             "competencies": " ",
             "exams": [{
                 "name": "Multimedia Production III",
-                "time": "Middle/End of 3rd Semester",
+                "time": "middle or the end of 3rd Semester",
                 "ects": 20,
                 "assesment": "7-point grading scale",
-                "evaluation": "Internal",
+                "evaluation": "internal",
                 "short description": " "
 
         }, {
                 "name": "Elective Program Element",
-                "time": "Middle/End of 3rd Semester",
+                "time": "middle or the end of 3rd Semester",
                 "ects": 10,
                 "assesment": "7-point grading scale",
-                "evaluation": "Internal"
+                "evaluation": "internal"
 
         }],
             "internship": 0,
@@ -70,7 +72,8 @@
 
     },
         {
-            "semester": 4,
+            "semester": "4th",
+            "id":"sem1",
             "ects": 30,
             "knowledge": " ",
             "skills": " ",
@@ -80,14 +83,14 @@
                 "time": "end of the Internship",
                 "ects": 15,
                 "evaluation": "Internal",
-                "short description": " ",
+                "short description": " "
 
         }, {
                 "name": "Final Exam Project",
-                "time": "End of 4th Semester",
+                "time": "end of 4th Semester",
                 "ects": 15,
                 "assesment": "7-point grading scale",
-                "evaluation": "External",
+                "evaluation": "external",
                 "short description": " "
 
         }],
@@ -97,36 +100,4 @@
     }
 
 
-    ],
-    "coreArea": [
-        {
-            "name": "Business",
-            "ects": 15,
-            "knowledge": " ",
-            "skills": " ",
-            "competencies": " "
-        },
-        {
-            "name": "Communication and Presentation",
-            "ects": 15,
-            "knowledge": " ",
-            "skills": " ",
-            "competencies": " "
-        },
-        {
-            "name": "Design and Visualisation",
-            "ects": 25,
-            "knowledge": " ",
-            "skills": " ",
-            "competencies": " "
-        },
-        {
-            "name": "Interaction Development",
-            "ects": 15,
-            "knowledge": " ",
-            "skills": " ",
-            "competencies": " "
-        }
-
     ]
-}
