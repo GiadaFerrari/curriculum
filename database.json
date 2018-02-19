@@ -13,6 +13,7 @@
                 "ects": 30,
                 "assesment": "7-point grading scale",
                 "evaluation": "Internal",
+                "short description": " "
 
         }],
             "electives": 0,
@@ -30,7 +31,9 @@
                 "time": "End of 2nd Semester",
                 "ects": 30,
                 "assesment": "7-point grading scale",
-                "evaluation": "External"
+                "evaluation": "External",
+                "short description": " "
+
 
         }],
             "electives": 0,
@@ -50,7 +53,8 @@
                 "time": "Middle/End of 3rd Semester",
                 "ects": 20,
                 "assesment": "7-point grading scale",
-                "evaluation": "Internal"
+                "evaluation": "Internal",
+                "short description": " "
 
         }, {
                 "name": "Elective Program Element",
@@ -76,14 +80,16 @@
                 "time": "End of Internship",
                 "ects": 15,
                 "assesment": "7-point grading scale",
-                "evaluation": "Internal"
+                "evaluation": "Internal",
+                "short description": " ",
 
         }, {
                 "name": "Final Exam Project",
                 "time": "End of 4th Semester",
                 "ects": 15,
                 "assesment": "7-point grading scale",
-                "evaluation": "External"
+                "evaluation": "External",
+                "short description": " "
 
         }],
             "internship": 1,
