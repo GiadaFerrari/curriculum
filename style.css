@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: white;
+    background-color: floralwhite;
     font-family: "Lato", sans-serif;
     overflow-x: hidden;
     max-width: 99vw
@@ -11,6 +11,9 @@ body {
 .wf {
     background-color: white;
 }
+
+section, aside, main {margin-left:2em;
+margin-right:2em;}
 
 .hide {display: none;}
 
@@ -108,9 +111,9 @@ aside.moveMeUpCA {
 @keyframes moveMeUpCA {
 
     to {
-        transform: translateY(-193.5vh);
-        background-color: #777777;
+        transform: translateY(-203.5vh);
         width: 100vw;
+        z-index: 999;
 
     }
 }
@@ -125,8 +128,8 @@ aside.moveMeUpCA {
 text-align: center;}
 
 .circle div img {
-    width: 100%;
-    max-width: 400px;
+    width: 80%;
+    max-width: 200px;
 
 }
 
@@ -348,9 +351,9 @@ a.highlighted {
     @keyframes moveMeUpCA {
 
         to {
-            transform: translateY(-188vh);
-            background-color: #777777;
+            transform: translateY(-202vh);
             width: 100vw;
+            z-index: 999;
 
 
         }
@@ -420,9 +423,9 @@ a.highlighted {
     @keyframes moveMeUpCA {
 
         to {
-            transform: translateY(-171vh);
-            background-color: #777777;
+            transform: translateY(-186vh);
             width: 100vw;
+            z-index: 9999;
 
 
         }
