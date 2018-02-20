@@ -11,27 +11,46 @@
 
 <body onscroll="closeNav()">
 
-    <header>  <img class="logo" src="images/logo.png" />
-   <span onclick="openNav()" class="burger-menu">&#9776;</span>
-    <nav id="sidenav" class="main-nav"> <a href="#" class="closebtn" onclick="closeNav()">&times;</a> <a href="index.html" class="highlighted">HOME</a> <a href="program.html">PROGRAM</a> <a href="admission.html">ADMISSION</a> <a href="future.html">FUTURE</a> </nav>
-
-    <!--- this div is gonna be the background img-->
-   </header>
- <div class="wfb backImg">
-  <!---  <img class="background" src="" alt="background picture" />
+    <header> <img class="logo" src="images/logo.png" />
+        <span onclick="openNav()" class="burger-menu">&#9776;</span>
+        <nav id="sidenav" class="main-nav"> <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html"  class="highlighted">HOME</a>
+       <a href="program.html">PROGRAM</a>
+        <a href="admission.html">ADMISSION</a>
+        <a href="abroad.html">STUDY EEXCHANGE</a>
+        <a href="internship.html">INTERNSHIP</a>
+        <a href="future.html">FUTURE</a>
+   </nav>
+        <!--- this div is gonna be the background img-->
+    </header>
+    <div class="wfb backImg">
+        <!---  <img class="background" src="" alt="background picture" />
 --->
-       <div class="title">
-           <h1>CURRICULUM <br> MULTIMEDIA DESIGN</h1></div>
+        <div class="title">
+            <h1>CURRICULUM <br> MULTIMEDIA DESIGN</h1>
+        </div>
     </div>
 
     <section class="grid">
         <div class="wf contLeft">
             <h1>WHAT IS MMD</h1>
-            <p class=""></p>
+            <p class="">The Multimedia Design program is a digital design education. As a Multimedia Design student, you work with all stages of the digital design process and you acquire skills within the core areas: User Interface (UI), User Experience (UX), Development (programming) and Management. You learn how to design, develop, plan, manage and produce multimedia products including websites, games and mobile services in addition to video, digital communication, and innovative concepts. As part of your studies, you collaborate with businesses and organisations during an internship and study projects.
+
+            </p>
         </div>
+        <img src="" alt="mmd"><img src="" alt="mmd">
         <div class="wf contRight">
             <h1>OBJECTIVES</h1>
-            <p class=""></p>
+            <p class="">The program’s objective is to qualify you, the graduate, as a competent multimedia wizard.
+At the end of the program, you will:
+</p><ul>
+    <li>be able to independently design, plan, manage and realize multimedia tasks, such as – designing and coding websites, creating animations, editing images and videos, and more.
+</li>
+    <li>assist in the implementation, administration and maintenance of multimedia productions – management and business knowledge for corporates
+</li>
+    <li>be able to work both individual and, in a team, -based project work. You will participate in and manage cooperation and communication in networks based on a professional approach.
+</li>
+</ul>
         </div>
     </section>
 
@@ -39,11 +58,7 @@
     <!---this is the Core Area section --->
 
 
-
-      <h1 class="CoreAreaTitle">Core Areas</h1>
-
-
-     <aside class="circle">
+    <aside class="circle">
         <div><a href="#businessP"><img src="images/w-circle.png" alt="1st Semester"></a></div>
         <div> <a href="#communicationP"><img src="images/w-circle.png" alt="1st Semester"></a></div>
         <div><a href="#designP"><img src="images/w-circle.png" alt="1st Semester"></a></div>
@@ -51,25 +66,28 @@
 
     </aside>
 
- <main class="coreAreasDes">
- <a id="businessP"></a>
-<h1 class="semTitle">CORE AREAS</h1>
+    <main class="coreAreasDes">
+        <a id="businessP"></a>
+        <h1 class="semTitle">CORE AREAS</h1>
     </main>
 
-<template>
+    <template>
 
         <div class="CAContainer">
             <h1><span class="name"></span>(<span class="ects"></span> ECTS)</h1>
 <a></a>
-               <h2>KNOWLEDGE</h2>
-                    <ul class="knowledge"></ul>
+             <div class="CAgrid">
+                 <img class="imgCA" src="" alt="core area">
+              <div><h2>KNOWLEDGE</h2>
+                    <ul class="knowledge"></ul></div>
 
-                <h2>SKILLS</h2>
-                    <ul class="skills"></ul>
-                <h2>COMPETENCIES</h2>
-                    <ul class="competencies"></ul>
+
+               <div> <h2>SKILLS</h2>
+                   <ul class="skills"></ul></div>
+                <div><h2>COMPETENCIES</h2>
+                    <ul class="competencies"></ul></div>
         </div>
-
+        </div>
 
 
 
@@ -98,7 +116,7 @@
             <a href="mailto:kea@kea.dk"><img class="icons" src="images/email.png">kea@kea.dk</a>
         </div>
     </footer>
-         <script type="text/javascript" src="coreAreas.json"></script>
+    <script type="text/javascript" src="coreAreas.json"></script>
 
     <script type="text/javascript" src="home.js"></script>
 </body>
