@@ -48,9 +48,7 @@ function showData(e) {
         const cloneEx = templateEx.cloneNode(true);
         const appendHere = document.querySelector('.semesters');
         const appendExam = clone.querySelector('.examAppend');
-        const appendInt = clone.querySelector('.internship');
-        const appendEle = clone.querySelector('.electives');
-        const appendAbr = clone.querySelector('.exchange');
+
         const appendKnowl = clone.querySelector('.knowledge')
         const appendSkills = clone.querySelector('.skills')
         const appendCompet = clone.querySelector('.competencies')
@@ -58,7 +56,7 @@ function showData(e) {
         let exams = elem.exams
 
 
-        clone.querySelector('a').id = elem.id;
+       clone.querySelector('a').id = elem.id;
        // clone.querySelector('.semesterContainer').id = elem.id;
 
 
@@ -85,28 +83,6 @@ function showData(e) {
             appendCompet.appendChild(comLi)
 
         })
-
-
-        if (elem.internship) {
-
-            clone.querySelector(".internship").classList.remove('hide')
-            let pInt = document.createElement('p');
-
-            pInt.textContent = " ";
-            appendInt.appendChild(pInt)
-        }
-        if (elem.abroad) {
-            clone.querySelector(".exchange").classList.remove('hide')
-            let pAbr = document.createElement('p');
-            pAbr.textContent = " ";
-            appendAbr.appendChild(pAbr)
-        }
-        if (elem.electives) {
-            clone.querySelector(".electives").classList.remove('hide')
-            let pEle = document.createElement('p');
-            pEle.textContent = " ";
-            appendEle.appendChild(pEle)
-        }
 
 
         exams.forEach((ex) => {
