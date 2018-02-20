@@ -51,6 +51,9 @@ function showData(e) {
         const appendInt = clone.querySelector('.internship');
         const appendEle = clone.querySelector('.electives');
         const appendAbr = clone.querySelector('.exchange');
+        const appendKnowl = clone.querySelector('.knowledge')
+        const appendSkills = clone.querySelector('.skills')
+        const appendCompet = clone.querySelector('.competencies')
 
         let exams = elem.exams
 
@@ -61,9 +64,28 @@ function showData(e) {
 
         clone.querySelector('.semN').textContent = elem.semester + " "
         clone.querySelector('.ects').textContent = elem.ects
-        clone.querySelector('.knowledge').textContent = elem.knowledge
-        clone.querySelector('.skills').textContent = elem.skills
-        clone.querySelector('.competencies').textContent = elem.competencies
+        elem.knowledge.forEach(know => {
+            let knoLi = document.createElement('li')
+
+            knoLi.textContent = know;
+            appendKnowl.appendChild(knoLi)
+
+        })
+        elem.skills.forEach(skill => {
+            let skillsLi = document.createElement('li')
+
+            skillsLi.textContent = skill;
+            appendSkills.appendChild(skillsLi)
+
+        })
+        elem.competencies.forEach(com => {
+            let comLi = document.createElement('li')
+
+            comLi.textContent = com;
+            appendCompet.appendChild(comLi)
+
+        })
+
 
         if (elem.internship) {
 
