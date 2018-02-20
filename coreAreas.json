@@ -3,33 +3,33 @@
             "name": "Business",
             "id":"communicationP",
             "ects": 15,
-            "knowledge": " ",
-            "skills": " ",
-            "competencies": " "
+            "knowledge": [" "],
+            "skills": [""],
+            "competencies": [" "]
         },
         {
             "name": "Communication and Presentation",
             "id":"designP",
             "ects": 15,
-            "knowledge": " ",
-            "skills": " ",
-            "competencies": " "
+            "knowledge": [" "],
+            "skills": [" "],
+            "competencies": [" "]
         },
         {
             "name": "Design and Visualisation",
             "id":"developmentP",
             "ects": 25,
-            "knowledge": " ",
-            "skills": " ",
-            "competencies": " "
+            "knowledge": [" "],
+            "skills": [" "],
+            "competencies": [" "]
         },
         {
             "name": "Interaction Development",
             "id":" ",
             "ects": 15,
-            "knowledge": " ",
-            "skills": " ",
-            "competencies": " "
+            "knowledge": [" "],
+            "skills": [" "],
+            "competencies": [" "]
         }
 
     ]
