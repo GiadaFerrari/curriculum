@@ -86,7 +86,6 @@ aside.moveMeUp {
 
 .CAContainer {
 
-    height: 500px;
     background-color: white;
     margin: 1em;
 
@@ -118,15 +117,6 @@ aside.moveMeUpCA {
 
 /*program structure page*/
 
-/*div.padMe {
-    padding-top: 8em;
-    animation: scrollMe 4s forwards;
-}
-
-@keyframes scrollMe {
-    50%{padding-top:8em;}
-    100% {padding-top: .5em;}
-}*/
 
 .semTitle{
     height:4em;
