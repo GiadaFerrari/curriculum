@@ -118,7 +118,7 @@ aside.moveMeUpCA {
 
 /*program structure page*/
 
-div.padMe {
+/*div.padMe {
     padding-top: 8em;
     animation: scrollMe 4s forwards;
 }
@@ -126,6 +126,12 @@ div.padMe {
 @keyframes scrollMe {
     50%{padding-top:8em;}
     100% {padding-top: .5em;}
+}*/
+
+.semTitle{
+    height:4em;
+    color:black;
+    justify-content: center;
 }
 
 .circle div img {
@@ -143,6 +149,7 @@ div.padMe {
 .semesterContainer {
     background-color: white;
     margin: 1em;
+    margin-bottom:2em;
 }
 
 /*animationsPR*/
@@ -440,12 +447,13 @@ a.highlighted {
     }
 
     .semesterContainer {
-        background-color: white;
-        width: 100%;
-        margin: 1em;
+    background-color: white;
+    margin: 1em;
+    margin-bottom:2em;
 
     }
 
+    .semesterContainer a {margin:4em;}
 
 
     @keyframes moveMeUp {

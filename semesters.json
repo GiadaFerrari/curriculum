@@ -45,7 +45,7 @@
     },
         {
             "semester": "3rd",
-            "id":"sem",
+            "id":"sem3",
             "ects": 30,
             "knowledge": " ",
             "skills": " ",
@@ -73,7 +73,7 @@
     },
         {
             "semester": "4th",
-            "id":"sem1",
+            "id":"sem4",
             "ects": 30,
             "knowledge": " ",
             "skills": " ",
