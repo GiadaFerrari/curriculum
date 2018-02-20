@@ -55,8 +55,8 @@ function showData(e) {
         let exams = elem.exams
 
 
-        clone.querySelector('a').name = elem.id;
-        clone.querySelector('.semesterContainer').id = elem.id;
+        clone.querySelector('a').id = elem.id;
+       // clone.querySelector('.semesterContainer').id = elem.id;
 
 
         clone.querySelector('.semN').textContent = elem.semester + " "

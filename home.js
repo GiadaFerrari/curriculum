@@ -48,8 +48,8 @@ function showData(e) {
         const appendHere = document.querySelector('.coreAreasDes');
 
 
-        clone.querySelector('a').name = elem.id;
-        clone.querySelector('.CAContainer').id = elem.id;
+        clone.querySelector('.CAContainer a').id = elem.id;
+       // clone.querySelector('.CAContainer').id = elem.id;
         clone.querySelector('.name').textContent = elem.name;
         clone.querySelector('.ects').textContent = elem.ects;
         clone.querySelector('.knowledge').textContent = elem.knowledge;
