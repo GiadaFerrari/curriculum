@@ -93,7 +93,7 @@ window.onscroll = function () {
 }
 
 function sliderMobile() {
-    if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+    if (document.body.scrollTop > 1200 || document.documentElement.scrollTop > 1200) {
         console.log('hi papa');
         coreArea.classList.add('moveMeUpCA', 'gridMe');
         coreArea.classList.remove('coreAreas')

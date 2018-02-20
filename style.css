@@ -1,10 +1,11 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #777777;
+    background-color: white;
     font-family: "Lato", sans-serif;
     overflow-x: hidden;
     max-width: 99vw
+
 }
 
 .wf {
@@ -29,7 +30,7 @@ body {
 
 header {
     position: fixed;
-    background-color: #777777;
+    background-color:white;
     height: 5em;
     width: 100%;
     z-index: 111;
@@ -107,7 +108,7 @@ aside.moveMeUpCA {
 @keyframes moveMeUpCA {
 
     to {
-        transform: translateY(-126.5vh);
+        transform: translateY(-193.5vh);
         background-color: #777777;
         width: 100vw;
 
@@ -121,8 +122,7 @@ aside.moveMeUpCA {
 .semTitle{
     height:4em;
     color:black;
-    justify-content: center;
-}
+text-align: center;}
 
 .circle div img {
     width: 100%;
@@ -332,10 +332,15 @@ a.highlighted {
         margin-right: 10px;
         height: auto;
     }
+/*core area*/
 
+    .CAgrid{display: grid;
+        grid-template-columns: repeat(2, minmax(20em, 1fr));
+    }
     /*animations CA*/
     aside.circle.moveMeUpCA {
         grid-template-rows: 4em;
+
     }
 
 
@@ -343,7 +348,7 @@ a.highlighted {
     @keyframes moveMeUpCA {
 
         to {
-            transform: translateY(-126.5vh);
+            transform: translateY(-188vh);
             background-color: #777777;
             width: 100vw;
 
@@ -356,7 +361,7 @@ a.highlighted {
     /*program*/
     .circle {
         display: grid;
-        grid-template-columns: repeat(2, minmax(200px, 1fr));
+        grid-template-columns: repeat(4, minmax(200px, 1fr));
         grid-gap: 1.5rem;
     }
 
@@ -376,15 +381,16 @@ a.highlighted {
         }
     }
 }
-
-@media only screen and (min-width: 60em) {
-    /*grid*/
     section.grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
+        grid-template-columns: repeat(2, minmax(20em, 1fr));
         grid-gap: 1.5rem;
         grid-template-rows: 20em;
     }
+
+
+@media only screen and (min-width: 60em) {
+    /*grid*/
 
 
 
@@ -414,7 +420,7 @@ a.highlighted {
     @keyframes moveMeUpCA {
 
         to {
-            transform: translateY(-154.5vh);
+            transform: translateY(-171vh);
             background-color: #777777;
             width: 100vw;
 
