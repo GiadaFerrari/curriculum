@@ -414,6 +414,7 @@ footer a {
 
 }
 
+
 .contact-us {
     margin-bottom: 5px;
 }
@@ -426,8 +427,7 @@ footer a {
 }
 
 .footerLogo {
-    width: 20vh;
-    margin: auto;
+   display:none;
 
 }
 
@@ -517,6 +517,8 @@ ul {
     font-weight: 400;
     color: black;
 }
+
+ul li{padding-bottom:.3em;}
 
 .semesterContainer ul, CAContainer ul {font-weight: 300}
 
@@ -694,6 +696,8 @@ h4 {
 
     }
 
+    .footerLogo {width:200px;
+    display: inline;}
     footer a {
         color: black;
         text-decoration: none;
@@ -707,11 +711,7 @@ h4 {
         margin-bottom: -13px;
     }
 
-    .footerLogo {
-        width: 25vh;
-        margin: auto;
 
-    }
 
     .icons {
         width: 20px;
