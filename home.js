@@ -56,7 +56,9 @@ function showData(e) {
         // clone.querySelector('.CAContainer').id = elem.id;
         clone.querySelector('.name').textContent = elem.name;
         clone.querySelector('.ects').textContent = elem.ects;
-        clone.querySelector('.imgCA').src= elem.image;
+        clone.querySelector('.imgCA').style.cssText = "background-image: url(" + elem.image + ")";
+        clone.querySelectorAll('.cont h2').forEach((h2)=>{h2.style.cssText = "border-color:" + elem.color + ";"})
+
         elem.knowledge.forEach(know => {
             let knoLi = document.createElement('li')
 
