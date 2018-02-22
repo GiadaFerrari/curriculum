@@ -365,6 +365,7 @@ margin-top:.1em;}
     animation: moveMeUpCA 1s forwards ease;
     position:absolute;
     top:.2em;
+    right: 0;
 }
 
 
@@ -411,7 +412,8 @@ text-align: center;}
 .moveMeUp.gridMe {
     animation: moveMeUp 1s forwards ease;
     position:fixed;
-    left:.9vh;
+    right: 1em;
+    margin: auto;
     top:.5vh;
 
 }
@@ -801,7 +803,9 @@ h4 {
     /*animations CA*/
     aside.circle.moveMeUpCA {
         grid-template-rows: 4em;
-        top:-5vh;
+        top:-2vh;
+        left: 0;
+        right: 0;
     }
 
 
@@ -851,8 +855,9 @@ main {margin-left:7vw;
 margin-right:7vw;}
 
     .moveMeUp.gridMe{
-        left:40vh;
-    top:-5vh}
+        left:0;
+        right: 0;
+    }
     /*animation*/
     @keyframes moveMeUp {
 
@@ -1029,5 +1034,5 @@ margin-right:7vw;}
         margin-bottom: 3.2em;
     }
 
-    aside.circle.moveMeUpCA{left:40vh;}
+
 }
