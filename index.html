@@ -23,28 +23,42 @@
    </nav>
         <!--- this div is gonna be the background img-->
     </header>
-    <div class="wfb backImg">
-<video autoplay loop><source src="images/Visit%20Copenhagen%20In%204K%202.mp4" type="video/mp4"></video>
 
+    <div class=" index-video">
+<video autoplay loop><source src="images/CV-video.mp4" type="video/mp4"> </video>
+
+<div class="header-subtitle">Challenge the ordinary.</div>
     </div>
 
     <section class="grid">
+      <div class="img-style first-img">
+       </div>
         <div class="wf contLeft">
-            <h1>WHAT IS MMD</h1>
-            <p class="">The Multimedia Design program is a digital design education. As a Multimedia Design student, you work with all stages of the digital design process and you acquire skills within the core areas: User Interface (UI), User Experience (UX), Development (programming) and Management. You learn how to design, develop, plan, manage and produce multimedia products including websites, games and mobile services in addition to video, digital communication, and innovative concepts. As part of your studies, you collaborate with businesses and organisations during an internship and study projects.
 
-            </p>
+            <h1>What is Multimedia Design & Communication?
+            </h1>
+            <div class="line"></div>
+            <p class="intro">The Multimedia Design program is a digital design education. <br>As a Multimedia Design student, you work with all stages of the digital design process and you acquire skills within the core areas:</p>
+            <ul>
+            <li>User Interface (UI)</li><li> User Experience (UX)</li>
+            <li>Development and Management.</li>
+            </ul>
+            <p class="intro">You learn how to design, develop, plan, manage and produce multimedia products including websites, games and mobile services in addition to video, digital communication, and innovative concepts. As part of your studies, you collaborate with businesses and organisations during an internship and study projects.</p>
         </div>
-        <img src="" alt="mmd"><img src="" alt="mmd">
+        <div class="img-style second-img">
+            </div>
         <div class="wf contRight">
-            <h1>OBJECTIVES</h1>
+            <h1>What are the objectives?</h1>
+            <div class="line"></div>
             <p class="">The program’s objective is to qualify you, the graduate, as a competent multimedia wizard.
 At the end of the program, you will:
 </p><ul>
     <li>be able to independently design, plan, manage and realize multimedia tasks, such as – designing and coding websites, creating animations, editing images and videos, and more.
 </li>
+   <br>
     <li>assist in the implementation, administration and maintenance of multimedia productions – management and business knowledge for corporates
 </li>
+   <br>
     <li>be able to work both individual and, in a team, -based project work. You will participate in and manage cooperation and communication in networks based on a professional approach.
 </li>
 </ul>
@@ -71,17 +85,20 @@ At the end of the program, you will:
     <template>
 
         <div class="CAContainer">
-            <h1><span class="name"></span>(<span class="ects"></span> ECTS)</h1>
+            <h1 class="title-core-areas"><span class="name"></span></h1> <h4>(<span class="ects"></span> ECTS)</h4>
 <a></a>
              <div class="CAgrid">
                  <img class="imgCA" src="" alt="core area">
               <div><h2>KNOWLEDGE</h2>
+                   <div class="line-objectives line-knowledge"></div>
                     <ul class="knowledge"></ul></div>
 
 
                <div> <h2>SKILLS</h2>
+                   <div class="line-objectives line-skills"></div>
                    <ul class="skills"></ul></div>
                 <div><h2>COMPETENCIES</h2>
+                    <div class="line-objectives"></div>
                     <ul class="competencies"></ul></div>
         </div>
         </div>
@@ -91,26 +108,29 @@ At the end of the program, you will:
 
 
 </template>
+
+
     <footer>
         <div>
             <img class="iconLocation" src="images/11205-200.png">
 
             <a href="https://www.google.dk/maps/place/KEA+Copenhagen+School+of+Design+and+Technology+-+K%C3%B8benhavns+Erhvervsakademi/@55.7051535,12.5362084,17z/data=!4m8!1m2!2m1!1skea+lygten+16!3m4!1s0x0:0x4f1c40b349cd8482!8m2!3d55.7063711!4d12.53913">
-                <h3>Lygten 16, <br>2400 Copenhagen NV, <br>Denmark
+                <h3>Lygten 16, 2400 Copenhagen NV Denmark
                 </h3>
             </a>
         </div>
 
         <div>
-            <img class="footerLogo" src="images/1461139991_logo1.png">
+            <img class="footerLogo" src="images/logo-footer.png">
         </div>
 
-        <div>
-            <h2>Contact us
-            </h2>
-            <a href="tel:+45 4646 0400"><img class="icons" src="images/phone.png">+45 4646 0400s</a>
+        <div class="contact-us">
+            <h2>Contact us<br>
+
+            <a href="tel:+45 4646 0400"><img class="icons" src="images/phone.png">+45 4646 0400</a>
             <br><br>
             <a href="mailto:kea@kea.dk"><img class="icons" src="images/email.png">kea@kea.dk</a>
+            </h2>
         </div>
     </footer>
     <script type="text/javascript" src="coreAreas.json"></script>
