@@ -8,6 +8,11 @@ body {
 
 }
 
+a {text-decoration: none;
+color: black;}
+
+.oppa{color:white;
+height:70px;}
 
 .circle div {
      border-radius: 100%;
@@ -243,7 +248,9 @@ margin-right:7vw;}
 
 aside {width:80vw;
     justify-content: center;
-    margin-left:20vh;
+    margin-left:10vw;
+    padding-top:1em;
+
 }
 
 
@@ -357,14 +364,16 @@ margin-top:.1em;}
 
 .moveMeUpCA {
     animation: moveMeUpCA 1s forwards ease;
+    position:absolute;
+    top:.2em;
 }
 
 
 @keyframes moveMeUpCA {
 
     to {
-        transform: translateY(-203.5vh);
         z-index: 111;
+        width: 50vh;
 
     }
 
@@ -387,7 +396,8 @@ text-align: center;}
 
 .gridMe {
     display: grid;
-    grid-template-columns: repeat(4, minmax(60px, 40px));
+    grid-template-columns: repeat(4, minmax(30px, 40px));
+    grid-column-gap: .5em;
     position: fixed;
 }
 
@@ -780,16 +790,16 @@ h4 {
     /*animations CA*/
     aside.circle.moveMeUpCA {
         grid-template-rows: 4em;
-
+        top:-5vh;
     }
 
 
 
     @keyframes moveMeUpCA {
+        from {width:100vw;}
 
         to {
-            transform: translateY(-202vh);
-            width: 100vw;
+            width: 80vw;
             z-index: 999;
 
 
@@ -950,7 +960,6 @@ margin-right:7vw;}
     @keyframes moveMeUpCA {
 
         to {
-            transform: translateY(-186vh);
             z-index: 1111;
 
 
@@ -1009,4 +1018,6 @@ margin-right:7vw;}
     .header-subtitle {
         margin-bottom: 3.2em;
     }
+
+    aside.circle.moveMeUpCA{left:40vh;}
 }
