@@ -9,6 +9,47 @@ body {
 }
 
 
+.circle div {
+     border-radius: 100%;
+    background-color: #969595;
+}
+
+/****** SEMESTERS ********/
+.circle div.sem1:hover {
+     background-color: #FDD757;
+}
+
+.circle div.sem2:hover {
+     background-color: #56C271;
+}
+
+.circle div.sem3:hover{
+     background-color: #8E7FAE;
+}
+
+
+.circle div.sem4:hover {
+     background-color: #B16278;
+}
+
+
+/******** CORE AREAS *********/
+.circle div.business:hover {
+     background-color: #6ECEB2;
+}
+
+.circle div.communication:hover {
+     background-color: #B16278;
+}
+
+.circle div.design:hover {
+     background-color: #fa9370;
+}
+
+.circle div.development:hover {
+     background-color: #59cbe8;
+}
+
 
 #program {
     background-image: url(images/study_leptop.jpeg);
@@ -323,9 +364,7 @@ margin-top:.1em;}
 text-align: center;}
 
 .circle div img {
-    width: 80%;
-    max-width: 200px;
-    display: none;
+    width: 100%;
 
 }
 
@@ -751,6 +790,10 @@ h4 {
         display: grid;
         grid-template-columns: repeat(4, minmax(200px, 1fr));
         grid-gap: 1.5rem;
+        width: 20%;
+        margin: auto;
+        margin-top: 2em;
+
     }
 
     aside.gridMe {
@@ -875,7 +918,7 @@ h4 {
         display: grid;
         grid-template-columns: repeat(4, minmax(200px, 1fr));
         grid-gap: 1.5rem;
-        grid-template-rows: 20em;
+
 
     }
 
