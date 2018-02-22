@@ -100,19 +100,66 @@ body {
 }
 .img-6 {
     background-image: url(images/admition_second.jpg);
-        background-position: left;
+     background-position: left;
 }
 
 .img-7 {
     background-image: url(images/exchange_stud.jpeg);
 }
+.img-8 {
+    background-image: url(images/connection.jpeg);
+}
 
+.img-9 {
+    background-image: url(images/desk_future.jpeg);
+}
 
-
+.img-10 {
+    background-image: url(images/dimension.jpeg);
+}
 button a {
      text-decoration: none;
     color: white;
 
+}
+
+.color-0 {
+     background-color: #ffb4aa;
+}
+.color-1 {
+     background-color: #85DCBC;
+}
+
+.color-2 {
+    background-color: #E4BE9E;
+}
+
+.color-3 {
+    background-color: #BEBABA;
+}
+
+.color-4 {
+    background-color: #D3A49E;
+}
+
+.color-5 {
+    background-color: #81A598;
+}
+
+.color-6 {
+    background-color: #B16278;
+}
+
+.color-7 {
+    background-color: #4398AD;
+}
+
+.color-8 {
+    background-color: #64899D;
+}
+
+.color-9 {
+    background-color: #81A598;
 }
 
 .btn {
@@ -425,7 +472,6 @@ a.highlighted {
 /*HOME*/
 
 .contLeft{
-    background-color: #ffb4aa;
     padding: 1em;
 }
 
@@ -455,7 +501,7 @@ section h1 {
 
 
 .line{
-    background-color: grey;
+    background-color: lightgray;
     height: 3px;
     width: 5em;
     margin:auto;
@@ -481,7 +527,6 @@ section img {
 }
 
 .contRight {
-    background-color: #85DCBC;
     padding: 1em;
 }
 
@@ -524,6 +569,34 @@ h4 {
     width: 3em;
 }
 
+.admission-line {
+    position: absolute;
+    background-color:#FDD757;
+    height: 3px;
+    width: 3em;
+}
+
+.abroad-line {
+    position: absolute;
+    background-color:#B16278;
+    height: 3px;
+    width: 3em;
+}
+
+.internship-line {
+    position: absolute;
+    background-color:#06505C;
+    height: 3px;
+    width: 3em;
+}
+
+.future-line {
+    position: absolute;
+    background-color:#4398AD;
+    height: 3px;
+    width: 3em;
+}
+
 .CAgrid h2 {
     margin: 2em 0 .3em ;
     font-size: 20px;
@@ -532,12 +605,26 @@ h4 {
 @media only screen and (min-width: 40em) {
 
     .program-line {
-    height: 3px;
+    height: 5px;
     width: 5em;
 }
 
-
-
+    .admission-line {
+    height: 5px;
+    width: 5em;
+    }
+    .abroad-line {
+    height: 5px;
+    width: 5em;
+    }
+    .internship-line {
+   height: 5px;
+    width: 5em;
+    }
+    .future-line {
+     height: 5px;
+    width: 5em;
+    }
     .img-style {
       height: 100%;
     }
