@@ -609,11 +609,13 @@ section img {
 
     font-size: 25px;
     font-weight: 400;
-    margin: 2em 0 0 1.3em
+    padding: .3em .3em .3em;
+    margin: 2em 0 .4em .8em;
 
 }
 
-.CAContainer h4, .semesterContainer h4 {margin-left:2em}
+.CAContainer h4, .semesterContainer h4 {margin-left:2em;
+}
 
 h4 {
     font-weight: 300;

@@ -63,6 +63,8 @@ function showData(e) {
         clone.querySelector('.semN').textContent = elem.semester + " "
         clone.querySelector('.ects').textContent = elem.ects
         clone.querySelectorAll('.semesterContainer h2').forEach((h2)=>{h2.style.cssText = "border-color:" + elem.color + ";"})
+        clone.querySelectorAll('.semesterContainer h1').forEach((h1)=>{h1.style.cssText = "background-color:" + elem.color + "; opacity: .7;"  })
+
         elem.knowledge.forEach(know => {
             let knoLi = document.createElement('li')
 
