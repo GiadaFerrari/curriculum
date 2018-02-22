@@ -621,7 +621,10 @@ section img {
     font-weight: 400;
     padding: .3em .3em .3em;
     margin: 0em 0 .4em .8em;
+}
 
+h1.title-CA {
+    margin-left: 0vh;
 }
 
 .CAContainer h4, .semesterContainer h4 {margin-left:2em;
