@@ -10,11 +10,6 @@ logo.addEventListener('click', () => {
 //document.body.addEventListener('click', closeNav);
 
 
-function load() {
-    sidenav.classList.add('open-mq');
-}
-
-window.onload = load
 
 function openNav() {
     sidenav.classList.add('open');
