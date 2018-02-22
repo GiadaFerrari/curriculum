@@ -151,8 +151,11 @@ button a {
     background-color: #81A598;
 }
 
-.color-6 {
+div.color-6 {
     background-color: #B16278;
+    padding-left: 2em;
+    padding-right: 2em;
+
 }
 
 .color-7 {
