@@ -184,8 +184,11 @@ button a {
 
 
 
-section, main {margin-left:1em;
-margin-right:1em;}
+section{margin-left:7vw;
+margin-right:7vw;}
+
+main {margin-left:7vw;
+margin-right:7vw;}
 
 aside {width:80vw;
     justify-content: center;
@@ -504,6 +507,8 @@ ul {
     color: black;
 }
 
+.semesterContainer ul, CAContainer ul {font-weight: 300}
+
 section h1 {
     font-weight: bold;
     font-size: 18px;
@@ -515,7 +520,7 @@ section h1 {
 
 
 .line{
-    background-color: lightgray;
+    background-color: #FFFFFF;
     height: 3px;
     width: 5em;
     margin:auto;
@@ -544,9 +549,7 @@ section img {
     padding: 1em;
 }
 
-.semTitle {
-    font-size: 30px;
-}
+
 .title-core-areas {
 
     font-size: 25px;
@@ -555,15 +558,11 @@ section img {
 
 }
 
-.CAContainer h4 {margin-left:2em}
+.CAContainer h4, .semesterContainer h4 {margin-left:2em}
 
 h4 {
     font-weight: 300;
     margin-top: 0;
-}
-
-.coreAreasDes {
-    margin: 1em;
 }
 
 .line-objectives {
@@ -721,10 +720,10 @@ h4 {
 
     .CAgrid{display: grid;
         grid-template-columns: repeat(2, minmax(20em, 1fr));
-        grid-row-gap: 1em;
+        grid-gap: 1em;
     }
 
-    .CAgrid div {margin-left:2em}
+
     /*animations CA*/
     aside.circle.moveMeUpCA {
         grid-template-rows: 4em;
@@ -758,6 +757,20 @@ h4 {
         grid-template-columns: repeat(4, minmax(60px, 40px));
         position: fixed;
     }
+
+    .semesterContainer h2 {margin-left:1em;
+    border-bottom: 2px solid;}
+
+    .exam h3 {margin-bottom:0.2em;}
+
+    .exam h4 {margin-left:0em;}
+
+    .exam{margin-bottom:.5em}
+    section{margin-left:7vw;
+margin-right:7vw;}
+
+main {margin-left:7vw;
+margin-right:7vw;}
 
     /*animation*/
     @keyframes moveMeUp {
