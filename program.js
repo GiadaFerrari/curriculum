@@ -28,7 +28,6 @@ function closeNav() {
     sidenav.classList.remove('open');
     sidenav.classList.remove('open-mq');
     sidenav.classList.add('close');
-
 }
 
 //dynamic
