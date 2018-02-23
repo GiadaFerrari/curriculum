@@ -1,11 +1,32 @@
+#communicationP:before, #designP:before,#developmentP:before    {
+   content: "";
+   display: block;
+   height: 4em;
+   margin: -60px 0 0;
+}
+#businessP:before {
+   content: "";
+   display: block;
+   height: 7em;
+   margin: -60px 0 0;
+}
+#sem0:before {
+   content: "";
+   display: block;
+   height: 6em;
+   margin: -60px 0 0;
+}
+
 body {
     margin: 0;
     padding: 0;
     background-color: #FFF;
     font-family: "Helvetica Neue", "Arial", "Lato", sans-serif;
     overflow-x: hidden;
+}
 
-
+div.red {
+    background-color: #969595;
 }
 
 a {text-decoration: none;
@@ -64,6 +85,7 @@ height:70px;}
     background-attachment: scroll;
     background-size: cover;
     top: 0;
+    margin-bottom: 2em;
 
 }
 
@@ -74,6 +96,7 @@ height:70px;}
     background-attachment: scroll;
     background-size: cover;
     top: 0;
+    margin-bottom: 2em;
 }
 #admission-bg {
     background-image: url(images/admition_header.jpeg);
@@ -82,6 +105,7 @@ height:70px;}
     background-attachment: scroll;
     background-size: cover;
     top: 0;
+    margin-bottom: 2em;
 
 }
 
@@ -92,6 +116,7 @@ height:70px;}
     background-attachment: scroll;
     background-size: cover;
     top: 0;
+    margin-bottom: 2em;
 }
 #internship {
      background-image: url(images/intersheep_header.png);
@@ -100,6 +125,7 @@ height:70px;}
     background-attachment: scroll;
     background-size: cover;
      top: 0;
+    margin-bottom: 2em;
 }
 
 
@@ -107,9 +133,7 @@ height:70px;}
 
      background-image: url(images/admission_last.jpg);
    background-position:center;
-
     background-repeat: no-repeat;
-    background-attachment:fixed;
     background-size:contain;
      width: 100%;
     max-width: 100%;
@@ -239,17 +263,24 @@ div.color-6 {
 
 
 
-section{margin-left:7vw;
-margin-right:7vw;}
+section {
+    margin-left:7vw;
+margin-right:7vw;
+}
 
-main {margin-left:7vw;
-margin-right:7vw;}
+main {
+    margin-left:7vw;
+margin-right:7vw;
+}
 
-aside {width:80vw;
-    justify-content: center;
-    margin-left:10vw;
-    padding-top:1em;
+aside {
+    display: grid;
+    width:20em;
+   margin: auto;
 
+    padding:1em;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: .5em;
 }
 
 
@@ -385,9 +416,10 @@ margin-top:.1em;}
 
 
 .semTitle{
-    height:4em;
+    margin: 2em 0 .5em 0;
     color:black;
-text-align: center;}
+text-align: center;
+}
 
 .circle div img {
     width: 100%;
@@ -399,6 +431,8 @@ text-align: center;}
     grid-template-columns: repeat(4, minmax(30px, 40px));
     grid-column-gap: .5em;
     position: fixed;
+    max-width: 80px;
+    left: 0;
 }
 
 .semesterContainer {
@@ -622,7 +656,7 @@ section img {
     font-size: 25px;
     font-weight: 400;
     padding: .3em .3em .3em;
-    margin: 0em 0 .4em .8em;
+    margin: 0em 0 .4em 0;
 }
 
 h1.title-CA {
@@ -697,6 +731,12 @@ h4 {
 }
 /**********DESKTOP/TABLET***************/
 @media only screen and (min-width: 40em) {
+
+    aside {
+         justify-content: center;
+
+    }
+
 
     .program-line {
     height: 5px;
@@ -826,7 +866,7 @@ h4 {
     /*program*/
     .circle {
         display: grid;
-        grid-template-columns: repeat(4, minmax(200px, 1fr));
+        grid-template-columns: repeat(4, minmax(100px, 1fr));
         grid-gap: 1.5rem;
         width: 20%;
         margin: auto;
@@ -905,10 +945,9 @@ margin-right:7vw;}
     .apply {
 
      background-image: url(images/admission_last.jpg);
-   background-position:center;
+   background-position:right;
 
     background-repeat: no-repeat;
-    background-attachment: fixed;
     background-size:contain;
      width: 100%;
     max-width: 100%;
@@ -985,7 +1024,7 @@ margin-right:7vw;}
 
     /*program*/
     aside.gridMe {
-        grid-template-rows: 4em
+        grid-template-rows: 4em;
     }
 
     .circle {
@@ -1034,5 +1073,11 @@ margin-right:7vw;}
         margin-bottom: 3.2em;
     }
 
+    .apply {
+        background-attachment: fixed;
+    }
 
+    aside {
+        width:80vw;
+    }
 }
